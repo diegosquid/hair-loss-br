@@ -32,17 +32,20 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 mb-14">
           {/* Brand */}
           <div className="md:col-span-4 lg:col-span-5">
-            <Link href="/" className="inline-flex items-center gap-3 mb-5 group">
+            <Link href="/" className="inline-flex items-center gap-2.5 mb-5 group">
               <div className="relative w-8 h-8">
                 <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-forest-500 to-forest-700" />
-                <svg className="relative w-8 h-8 p-1.5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 3c-1.5 3-4 5-7 6 1 4 3 7 7 12 4-5 6-8 7-12-3-1-5.5-3-7-6z" />
+                <svg className="relative w-8 h-8 p-1.5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.6}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 22V8" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c0-3.5 3-6 6-6-1 3-3 5.5-6 6z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c0-3.5-3-6-6-6 1 3 3 5.5 6 6z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 14c0-2.5 2.5-4.5 5-4.5-.8 2.2-2.5 4-5 4.5z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 14c0-2.5-2.5-4.5-5-4.5.8 2.2 2.5 4 5 4.5z" />
                 </svg>
               </div>
-              <div className="flex items-baseline gap-1.5">
-                <span className="text-lg font-display font-bold text-white">Hair Loss</span>
-                <span className="text-lg font-display font-bold text-forest-400">BR</span>
-              </div>
+              <span className="text-lg font-display font-bold">
+                <span className="text-white">Capilar</span><span className="text-forest-400">mente</span>
+              </span>
             </Link>
             <p className="text-warm-500 text-[15px] leading-relaxed max-w-sm mb-6">
               Informacoes baseadas em evidencias cientificas sobre tratamentos para queda de cabelo no Brasil.
@@ -105,7 +108,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-warm-800/50">
           <p className="text-warm-600 text-[13px]">
-            &copy; {new Date().getFullYear()} Hair Loss BR. Conteudo informativo, nao substitui consulta medica.
+            &copy; {new Date().getFullYear()} Capilarmente. Conteudo informativo, nao substitui consulta medica.
           </p>
           <div className="flex items-center gap-1 text-[13px] text-warm-600">
             Feito com

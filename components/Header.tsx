@@ -31,21 +31,20 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
         <div className="flex items-center justify-between h-[72px]">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-2.5 group">
             <div className="relative w-9 h-9">
               <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-forest-500 to-forest-700 opacity-90 group-hover:opacity-100 transition-opacity" />
-              <svg className="relative w-9 h-9 p-[7px] text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 3c-1.5 3-4 5-7 6 1 4 3 7 7 12 4-5 6-8 7-12-3-1-5.5-3-7-6z" />
+              <svg className="relative w-9 h-9 p-[6px] text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.6}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 22V8" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c0-3.5 3-6 6-6-1 3-3 5.5-6 6z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c0-3.5-3-6-6-6 1 3 3 5.5 6 6z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 14c0-2.5 2.5-4.5 5-4.5-.8 2.2-2.5 4-5 4.5z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 14c0-2.5-2.5-4.5-5-4.5.8 2.2 2.5 4 5 4.5z" />
               </svg>
             </div>
-            <div className="flex items-baseline gap-1.5">
-              <span className="text-[20px] font-display font-bold text-warm-900 tracking-tight">
-                Hair Loss
-              </span>
-              <span className="text-[20px] font-display font-bold text-forest-600">
-                BR
-              </span>
-            </div>
+            <span className="text-[20px] font-display font-bold tracking-tight">
+              <span className="text-warm-900">Capilar</span><span className="text-forest-600">mente</span>
+            </span>
           </Link>
 
           {/* Desktop Nav */}

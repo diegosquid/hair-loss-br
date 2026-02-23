@@ -1,4 +1,4 @@
-# Hair Loss BR
+# Capilarmente
 
 Site sobre tratamentos para queda de cabelo no Brasil.
 

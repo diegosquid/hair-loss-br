@@ -1,6 +1,6 @@
-# Hair Loss BR — Guia de Produção de Conteúdo
+# Capilarmente — Guia de Produção de Conteúdo
 
-> Documento de referência para criação de artigos do Hair Loss BR.
+> Documento de referência para criação de artigos do Capilarmente.
 > Todas as publicações devem seguir este guia para manter consistência, autoridade médica e qualidade editorial.
 
 ---
@@ -526,7 +526,7 @@ Criar um componente React para CTA boxes padronizados:
 ## 10. Resumo da Estratégia (para automação/bot)
 
 ```
-📋 Estratégia de Conteúdo — Hair Loss BR
+📋 Estratégia de Conteúdo — Capilarmente
 
 Frequência: 3x por semana
 - Segunda → artigo técnico (medicamentos/tratamentos)

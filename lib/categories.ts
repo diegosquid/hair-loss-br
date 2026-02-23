@@ -16,7 +16,7 @@ export const categories: Record<string, CategoryConfig> = {
     description:
       "Conheça os principais medicamentos para tratamento da queda de cabelo disponíveis no Brasil.",
     accent: "forest",
-    seoTitle: "Medicamentos para Queda de Cabelo — Hair Loss BR",
+    seoTitle: "Medicamentos para Queda de Cabelo — Capilarmente",
     seoDescription:
       "Guia completo sobre medicamentos para queda de cabelo: minoxidil, finasterida, dutasterida e mais. Informações verificadas por dermatologistas.",
   },
@@ -27,7 +27,7 @@ export const categories: Record<string, CategoryConfig> = {
     description:
       "Procedimentos e terapias comprovados para restauração capilar no Brasil.",
     accent: "sage",
-    seoTitle: "Tratamentos para Queda de Cabelo — Hair Loss BR",
+    seoTitle: "Tratamentos para Queda de Cabelo — Capilarmente",
     seoDescription:
       "Transplante capilar, PRP, laser e microagulhamento. Tratamentos com eficácia comprovada para queda de cabelo.",
   },
@@ -38,7 +38,7 @@ export const categories: Record<string, CategoryConfig> = {
     description:
       "Entenda as causas da queda de cabelo e como identificar o seu tipo de alopecia.",
     accent: "terra",
-    seoTitle: "Causas da Queda de Cabelo — Hair Loss BR",
+    seoTitle: "Causas da Queda de Cabelo — Capilarmente",
     seoDescription:
       "Alopecia androgenética, queda hormonal, estresse e nutrição. Entenda as causas da queda de cabelo e quando procurar ajuda.",
   },
@@ -49,7 +49,7 @@ export const categories: Record<string, CategoryConfig> = {
     description:
       "Artigos e guias sobre queda de cabelo, tratamentos e cuidados capilares.",
     accent: "terra",
-    seoTitle: "Blog — Hair Loss BR",
+    seoTitle: "Blog — Capilarmente",
     seoDescription:
       "Artigos, guias práticos e dicas sobre queda de cabelo, calvície e cuidados capilares no Brasil.",
   },
