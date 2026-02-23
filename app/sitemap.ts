@@ -11,6 +11,7 @@ const STATIC_PAGES = [
   { path: "medicamentos", priority: 0.9, changefreq: "weekly" },
   { path: "causas", priority: 0.8, changefreq: "weekly" },
   { path: "blog", priority: 0.8, changefreq: "daily" },
+  { path: "avaliacao", priority: 0.9, changefreq: "monthly" },
   { path: "sobre", priority: 0.5, changefreq: "monthly" },
   { path: "editorial", priority: 0.3, changefreq: "monthly" },
   { path: "privacidade", priority: 0.3, changefreq: "monthly" },
