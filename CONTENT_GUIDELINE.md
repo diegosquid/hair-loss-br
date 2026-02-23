@@ -324,7 +324,236 @@ Além disso, no corpo do artigo:
 
 ---
 
-## 8. Checklist de Publicação
+## 8. Calendário Editorial e Frequência
+
+### Frequência de Publicação
+
+**3 artigos por semana** — ritmo sustentável para conteúdo médico de qualidade.
+
+| Dia | Tipo de Conteúdo | Exemplo |
+|---|---|---|
+| **Segunda** | Artigo técnico (medicamentos ou tratamentos) | "Minoxidil 5%: Guia Completo" |
+| **Quarta** | Artigo educacional (causas ou ciência) | "Por que o DHT causa calvície?" |
+| **Sexta** | Blog / lifestyle / guia prático | "5 Sinais de que Você Deve Consultar um Tricologista" |
+
+### Regra de Ouro: Atualizar ≥ Criar
+
+- **Semanas 1-8:** Foco em preencher todas as categorias (meta: 40 artigos)
+- **A partir do mês 3:** Dedicar 1 dos 3 slots semanais para **atualizar** artigos existentes
+- Google premia **freshness** em conteúdo YMYL — um artigo atualizado com novos estudos ganha mais autoridade que um artigo novo superficial
+
+### Prioridade por Categoria (Topical Authority)
+
+Completar uma categoria inteira antes de expandir demais outra. Sequência recomendada:
+
+1. **Medicamentos** — maior intenção de busca, alta conversão
+2. **Causas** — funil de descoberta, captura tráfego informacional
+3. **Tratamentos** — pacientes já decididos, alta intenção
+4. **Blog** — SEO de cauda longa, tráfego orgânico amplo
+
+### Backlog de Tópicos Sugeridos
+
+#### Medicamentos (próximos)
+- Alfaestradiol tópico
+- Cetoconazol shampoo: funciona para queda?
+- Latanoprosta para sobrancelhas e cílios
+- Minoxidil 5% vs 2%: qual escolher
+- Suplementos capilares: o que funciona e o que é marketing
+
+#### Tratamentos (próximos)
+- Mesoterapia capilar
+- Carboxiterapia para couro cabeludo
+- Terapia com LED vs laser: diferenças
+- Tricopigmentação (micropigmentação capilar)
+- Intradermoterapia capilar
+
+#### Causas (próximos)
+- Alopecia areata: guia completo
+- Alopecia de tração
+- Queda de cabelo pós-COVID
+- Queda de cabelo por medicamentos
+- Tricotilomania
+
+#### Blog (próximos)
+- Como escolher um dermatologista/tricologista
+- Antes e depois: o que esperar de cada tratamento
+- Guia de shampoos antiqueda: o que diz a ciência
+- Queda de cabelo feminina vs masculina
+- Custo real de tratar calvície no Brasil
+
+---
+
+## 9. Estratégia de Monetização por Afiliados
+
+### Roadmap de Monetização (Fases)
+
+**Não começar com links de afiliado.** Primeiro construir autoridade, depois monetizar.
+
+| Fase | Período | Ação | Meta |
+|---|---|---|---|
+| **1. Conteúdo puro** | Meses 1-2 | Publicar 3x/semana, zero links de afiliado | Indexar 30-40 artigos, construir autoridade no Google |
+| **2. Analytics** | Mês 2-3 | Instalar Google Analytics + Search Console, identificar top artigos | Saber quais artigos geram mais tráfego |
+| **3. Primeiros testes** | Mês 3 | Adicionar links de afiliado nos **3-5 artigos mais acessados** | Testar CTR, validar que não impacta ranking |
+| **4. Buy box** | Mês 4 | Criar componente React de buy box, aplicar nos artigos de medicamentos OTC | Padronizar experiência de compra |
+| **5. Escalar** | Mês 5+ | Expandir para todos os artigos relevantes, A/B testar posicionamento | Otimizar receita por artigo |
+
+**Por que essa ordem:**
+- Sites novos com links de afiliado desde o dia 1 podem ser penalizados pelo Google
+- Artigos "limpos" indexam melhor e constroem E-E-A-T orgânico
+- Quando os links forem adicionados, o tráfego já existe — monetizar é só "ligar a chave"
+- Permite comparar métricas: artigo com link vs sem link → mudou o ranking? Mudou o tempo na página?
+
+**Regra:** Ao adicionar links, monitorar por 2 semanas. Se o ranking cair, remover e investigar.
+
+### Princípios Éticos (YMYL)
+
+A monetização por afiliados em conteúdo de saúde exige cuidado redobrado:
+
+- **Transparência total** — sempre divulgar a relação de afiliado
+- **Recomendação honesta** — só indicar produtos com evidência científica
+- **Nunca sacrificar a confiança** — o leitor confia no site pela autoridade médica, perder isso é irreversível
+- **Disclosure obrigatório** — incluir aviso visível antes de qualquer link de afiliado
+
+### Disclosure Padrão
+
+Incluir no topo de artigos que contenham links de afiliado:
+
+```markdown
+> **Transparência:** Este artigo contém links de afiliado. Se você comprar através deles, podemos receber uma comissão — sem custo adicional para você. Isso ajuda a manter o site gratuito e atualizado. Nossas recomendações são baseadas exclusivamente em evidências científicas.
+```
+
+### Tipos de Produtos para Afiliação
+
+| Categoria | Produtos | Plataformas |
+|---|---|---|
+| **Medicamentos OTC** | Minoxidil (Kirkland, Pant, Rogaine), shampoos antiqueda (ketoconazol) | Amazon, Mercado Livre, farmácias online |
+| **Dispositivos** | Capacetes laser (iRestore, HairMax), dermarollers, pentes laser | Amazon, sites oficiais |
+| **Suplementos** | Biotina, complexos capilares, colágeno (somente com evidência) | Amazon, Beleza na Web |
+| **Cuidados capilares** | Shampoos, condicionadores, tônicos com ingredientes comprovados | Amazon, farmácias |
+| **Consultas** | Telemedicina dermatológica, plataformas de saúde | Programas próprios |
+
+### Onde Inserir Links de Afiliado (Estratégia por Seção)
+
+#### 1. Seção "Disponibilidade no Brasil" (melhor local)
+O leitor já leu sobre eficácia, efeitos colaterais e decidiu que quer comprar. Momento ideal.
+
+```markdown
+## Disponibilidade no Brasil
+
+O minoxidil 5% solução tópica está disponível sem receita no Brasil.
+
+**Onde comprar:**
+- [Kirkland Minoxidil 5% — frasco 60ml](link-afiliado) — a partir de R$ 89 (fev/2026)
+- [Pant Minoxidil 5% — nacional](link-afiliado) — a partir de R$ 65 (fev/2026)
+
+*Preços sujeitos a alteração. Última verificação: fev/2026.*
+```
+
+#### 2. Seção "O Procedimento" — para dispositivos
+Quando o artigo descreve equipamentos que o paciente pode usar em casa.
+
+```markdown
+### Dispositivos para Uso Domiciliar
+
+Para LLLT em casa, os dispositivos mais estudados clinicamente são:
+
+- [iRestore Essential](link-afiliado) — FDA-cleared, 51 lasers — a partir de R$ 2.500
+- [HairMax LaserBand 82](link-afiliado) — FDA-cleared, 82 lasers — a partir de R$ 4.200
+
+> ⚠️ Dispositivos sem certificação FDA/ANVISA não possuem garantia de segurança ou eficácia.
+```
+
+#### 3. Comparativos (artigos de blog)
+Artigos como "Minoxidil 5% vs 2%" ou "Melhor shampoo antiqueda" são naturalmente orientados a compra.
+
+```markdown
+## Comparativo de Preços
+
+| Produto | Concentração | Preço Médio | Link |
+|---|---|---|---|
+| Kirkland Minoxidil | 5% | R$ 89 | [Ver preço](link-afiliado) |
+| Pant Minoxidil | 5% | R$ 65 | [Ver preço](link-afiliado) |
+| Rogaine | 5% espuma | R$ 189 | [Ver preço](link-afiliado) |
+```
+
+#### 4. Sidebar/CTA Box (componente reutilizável)
+Criar um componente React para CTA boxes padronizados:
+
+```markdown
+> 🛒 **Produto mais recomendado pelos leitores:**
+> [Minoxidil Kirkland 5% — 6 meses de tratamento](link-afiliado)
+> ★★★★★ 4.8/5 (12.000+ avaliações) — a partir de R$ 249
+```
+
+### Onde NÃO Colocar Links de Afiliado
+
+| Local | Motivo |
+|---|---|
+| ❌ Seção "Efeitos Colaterais" | Gera desconfiança — parece que está minimizando riscos para vender |
+| ❌ Seção "Contraindicações" | Mesmo motivo — conflito de interesse evidente |
+| ❌ Dentro de citações científicas | Destrói credibilidade acadêmica |
+| ❌ Disclaimer médico | Jamais misturar aviso legal com monetização |
+| ❌ FAQ médicas | O leitor está buscando informação imparcial |
+| ❌ Primeiros 2 parágrafos | Agressivo demais, afasta o leitor antes de gerar confiança |
+
+### Métricas e Otimização
+
+- **CTR por seção:** Rastrear qual seção gera mais cliques (usar UTM parameters)
+- **A/B test de copy:** Testar "Ver preço" vs "Comprar agora" vs "Onde encontrar"
+- **Sazonalidade:** Reforçar links em janeiro (resolução de ano novo) e setembro (primavera)
+- **Atualizar preços:** Revisar preços nos artigos mensalmente — preço desatualizado gera abandono
+
+### Programas de Afiliado Recomendados
+
+| Programa | Comissão | Ideal Para |
+|---|---|---|
+| Amazon Associados BR | 4-8% | Minoxidil, dispositivos, suplementos |
+| Mercado Livre Afiliados | 5-12% | Produtos nacionais, volume alto |
+| Beleza na Web | 5-10% | Shampoos, cuidados capilares |
+| Programas diretos (marcas) | 10-20% | Dispositivos laser, clínicas parceiras |
+| Hotmart / Eduzz | 30-50% | Cursos/ebooks sobre saúde capilar (se aplicável) |
+
+### Regras de Compliance
+
+1. **Disclosure FTC/CONAR:** Todo artigo com links de afiliado deve ter aviso no topo
+2. **Não recomendar medicamentos tarjados:** Links de afiliado apenas para produtos OTC (sem receita)
+3. **Preços com data:** Sempre incluir "(mês/ano)" ao lado do preço
+4. **Não criar urgência falsa:** Evitar "últimas unidades" ou "desconto por tempo limitado"
+5. **Separar editorial de comercial:** O texto científico deve existir independente dos links — se remover todos os links, o artigo ainda deve fazer sentido completo
+
+---
+
+## 10. Resumo da Estratégia (para automação/bot)
+
+```
+📋 Estratégia de Conteúdo — Hair Loss BR
+
+Frequência: 3x por semana
+- Segunda → artigo técnico (medicamentos/tratamentos)
+- Quarta → artigo educacional (causas/ciência)
+- Sexta → blog/guia prático
+
+Meses 1-2: Foco total em publicar. Meta: 40 artigos. Zero links de afiliado.
+
+Mês 3+: 2 artigos novos + 1 atualização de artigo existente por semana.
+
+Prioridade de categorias: Medicamentos → Causas → Tratamentos → Blog
+(completar uma antes de expandir outra).
+
+Freshness: Artigos existentes devem ser revisados a cada 3-6 meses com
+novos estudos/dados. Google premia conteúdo médico atualizado mais do que
+conteúdo novo raso.
+
+Monetização: Só a partir do mês 3, começando pelos 3-5 artigos com mais
+tráfego. Mês 4 buy box. Mês 5+ escalar.
+
+Regra: Todo artigo precisa de referências PubMed reais com DOI. Mínimo 5
+para medicamentos, 4 para tratamentos/causas, 2 para blog.
+```
+
+---
+
+## 11. Checklist de Publicação
 
 Antes de publicar qualquer artigo, verificar:
 
