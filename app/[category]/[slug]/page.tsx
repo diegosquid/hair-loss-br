@@ -1,6 +1,7 @@
 import { getArticleBySlug } from "@/lib/content";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
 interface Props {
@@ -20,69 +21,72 @@ export default function ArticlePage({ params }: Props) {
   return (
     <>
       <Header />
-      <main className="pt-24 pb-20">
-        <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <main className="pt-28 pb-24">
+        <article className="max-w-3xl mx-auto px-5 sm:px-8 lg:px-10">
+          {/* Breadcrumb */}
+          <div className="flex items-center gap-2 text-[13px] text-warm-400 mb-8">
+            <Link href="/" className="hover:text-forest-600 transition-colors">Inicio</Link>
+            <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+            <Link href={`/${params.category}`} className="hover:text-forest-600 transition-colors capitalize">
+              {article.category}
+            </Link>
+            <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+            <span className="text-warm-500 truncate">{article.title}</span>
+          </div>
+
           {/* Header */}
-          <header className="mb-8">
-            <div className="flex items-center gap-2 mb-4">
-              <span className="px-3 py-1 text-sm font-medium bg-primary-500/20 text-primary-300 rounded-full">
-                {article.category}
-              </span>
-              <span className="text-navy-500">•</span>
-              <span className="text-navy-400 text-sm">
-                {new Date(article.publishedAt).toLocaleDateString('pt-BR')}
+          <header className="mb-10">
+            <div className="flex items-center gap-3 mb-5">
+              <span className="badge-green">{article.category}</span>
+              <span className="text-warm-400 text-[13px]">
+                {new Date(article.publishedAt).toLocaleDateString("pt-BR", { day: "numeric", month: "long", year: "numeric" })}
               </span>
               {article.updatedAt && (
                 <>
-                  <span className="text-navy-500">•</span>
-                  <span className="text-navy-400 text-sm">
-                    Atualizado: {new Date(article.updatedAt).toLocaleDateString('pt-BR')}
+                  <span className="w-1 h-1 rounded-full bg-warm-300" />
+                  <span className="text-warm-400 text-[13px]">
+                    Atualizado: {new Date(article.updatedAt).toLocaleDateString("pt-BR")}
                   </span>
                 </>
               )}
             </div>
 
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+            <h1 className="text-3xl md:text-4xl lg:text-[2.75rem] font-display font-bold text-warm-950 leading-[1.1] mb-5">
               {article.title}
             </h1>
 
-            <p className="text-xl text-navy-400">{article.description}</p>
+            <p className="text-xl text-warm-500 leading-relaxed font-light">{article.description}</p>
           </header>
 
-          {/* Author */}
-          <div className="flex items-center gap-4 p-4 bg-navy-900/50 rounded-xl border border-navy-800 mb-8">
-            <div className="w-12 h-12 rounded-full bg-primary-500/20 flex items-center justify-center">
-              <span className="text-xl">👨‍⚕️</span>
+          {/* Author card */}
+          <div className="flex items-center gap-4 p-5 bg-sage-50/60 rounded-2xl border border-sage-200/40 mb-10">
+            <div className="w-12 h-12 rounded-full bg-forest-100 flex items-center justify-center shrink-0">
+              <svg className="w-6 h-6 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+              </svg>
             </div>
             <div>
-              <p className="font-medium text-white">{article.author.name}</p>
-              <p className="text-sm text-navy-400">{article.author.credentials}</p>
+              <p className="font-semibold text-warm-900 text-[15px]">{article.author.name}</p>
+              <p className="text-[13px] text-warm-500">{article.author.credentials}</p>
             </div>
           </div>
 
           {/* Content */}
-          <div 
-            className="prose prose-invert prose-lg max-w-none
-              prose-headings:text-white prose-headings:font-semibold
-              prose-p:text-navy-300 prose-p:leading-relaxed
-              prose-a:text-primary-400 prose-a:no-underline hover:prose-a:underline
-              prose-strong:text-white
-              prose-ul:text-navy-300 prose-ol:text-navy-300
-              prose-li:marker:text-primary-500
-              prose-blockquote:border-primary-500 prose-blockquote:bg-navy-900/30 prose-blockquote:py-2 prose-blockquote:px-4 prose-blockquote:rounded-r-lg
-              prose-hr:border-navy-800"
+          <div
+            className="prose-custom"
             dangerouslySetInnerHTML={{ __html: article.content }}
           />
 
           {/* Tags */}
-          <div className="mt-12 pt-8 border-t border-navy-800">
-            <h3 className="text-sm font-medium text-navy-400 mb-3">Tags:</h3>
+          <div className="mt-14 pt-8 border-t border-warm-200">
+            <h3 className="text-[13px] font-semibold tracking-[0.08em] uppercase text-warm-400 mb-4">Tags</h3>
             <div className="flex flex-wrap gap-2">
               {article.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="px-3 py-1 text-sm bg-navy-800 text-navy-300 rounded-full"
-                >
+                <span key={tag} className="px-3 py-1.5 text-[13px] font-medium bg-warm-100 text-warm-600 rounded-full">
                   {tag}
                 </span>
               ))}
@@ -90,10 +94,15 @@ export default function ArticlePage({ params }: Props) {
           </div>
 
           {/* Medical Disclaimer */}
-          <div className="mt-8 p-4 bg-navy-900/50 rounded-xl border border-navy-800">
-            <p className="text-sm text-navy-400">
-              <strong className="text-navy-300">Aviso médico:</strong> Este conteúdo é informativo e não substitui consulta com dermatologista ou médico especialista. Sempre procure orientação profissional antes de iniciar qualquer tratamento.
-            </p>
+          <div className="mt-8 p-5 bg-terra-50/50 rounded-2xl border border-terra-200/30">
+            <div className="flex items-start gap-3">
+              <svg className="w-5 h-5 text-terra-500 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+              </svg>
+              <p className="text-[14px] text-warm-600 leading-relaxed">
+                <strong className="text-warm-800">Aviso medico:</strong> Este conteudo e informativo e nao substitui consulta com dermatologista ou medico especialista. Sempre procure orientacao profissional antes de iniciar qualquer tratamento.
+              </p>
+            </div>
           </div>
         </article>
       </main>
@@ -103,6 +112,5 @@ export default function ArticlePage({ params }: Props) {
 }
 
 export function generateStaticParams() {
-  // Return empty array - Next.js will generate params at build time
   return [];
 }
