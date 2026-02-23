@@ -25,6 +25,42 @@ export const authors: Record<string, Author> = {
     specialties: ["Endocrinologia", "Dermatologia Hormonal", "Alopecia Feminina"],
     affiliations: ["Sociedade Brasileira de Endocrinologia", "International Society of Hair Restoration Surgery"],
   },
+  "dr-santos": {
+    name: "Dr. Fernando Santos",
+    slug: "dr-santos",
+    title: "Cirurgião Capilar",
+    credentials: "CRM-SP 234567 | RQE 34567",
+    bio: "Cirurgião especializado em transplante capilar com mais de 3.000 procedimentos FUE realizados. Membro da ISHRS.",
+    specialties: ["Transplante Capilar", "Cirurgia FUE/FUT", "Restauração Capilar"],
+    affiliations: ["International Society of Hair Restoration Surgery", "Associação Brasileira de Cirurgia da Restauração Capilar"],
+  },
+  "dra-costa": {
+    name: "Dra. Mariana Costa",
+    slug: "dra-costa",
+    title: "Tricologista",
+    credentials: "CRM-MG 345678 | RQE 45678",
+    bio: "Tricologista com formação em dermatologia e especialização em diagnóstico capilar. Pesquisadora em novas terapias para alopecia.",
+    specialties: ["Tricologia", "Diagnóstico Capilar", "Terapia com Laser"],
+    affiliations: ["Sociedade Brasileira de Dermatologia", "World Trichology Society"],
+  },
+  "dr-almeida": {
+    name: "Dr. Paulo Almeida",
+    slug: "dr-almeida",
+    title: "Dermatologista",
+    credentials: "CRM-RJ 456789 | RQE 56789",
+    bio: "Dermatologista com foco em alopecia androgenética e terapias farmacológicas. Professor associado com publicações em periódicos internacionais.",
+    specialties: ["Farmacologia Dermatológica", "Alopecia Androgenética", "Pesquisa Clínica"],
+    affiliations: ["Sociedade Brasileira de Dermatologia", "European Academy of Dermatology and Venereology"],
+  },
+  "dra-lima": {
+    name: "Dra. Juliana Lima",
+    slug: "dra-lima",
+    title: "Nutrologista",
+    credentials: "CRM-SP 567890 | RQE 67890",
+    bio: "Nutrologista especializada na relação entre nutrição e saúde capilar. Experiência em tratamentos integradores para queda de cabelo.",
+    specialties: ["Nutrologia", "Nutrição Capilar", "Suplementação"],
+    affiliations: ["Associação Brasileira de Nutrologia", "International Society of Dermatology"],
+  },
 };
 
 export function getAllArticles(): Article[] {

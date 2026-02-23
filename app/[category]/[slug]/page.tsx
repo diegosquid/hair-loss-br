@@ -1,4 +1,4 @@
-import { getArticleBySlug } from "@/lib/content";
+import { getArticleBySlug, getAllArticles } from "@/lib/content";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -112,5 +112,9 @@ export default function ArticlePage({ params }: Props) {
 }
 
 export function generateStaticParams() {
-  return [];
+  const articles = getAllArticles();
+  return articles.map((a) => ({
+    category: a.categorySlug,
+    slug: a.slug,
+  }));
 }
