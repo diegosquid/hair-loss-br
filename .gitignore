@@ -3,5 +3,7 @@ node_modules/
 dist/
 .env
 .env.local
+.env.cron
 *.log
+logs/
 .DS_Store
