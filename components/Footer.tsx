@@ -14,10 +14,10 @@ const FOOTER_LINKS = {
     { label: "Nutricao Capilar", href: "/causas/nutricao-capilar" },
   ],
   sobre: [
+    { label: "Nossa Equipe", href: "/autores" },
     { label: "Sobre Nos", href: "/sobre" },
     { label: "Politica Editorial", href: "/editorial" },
     { label: "Privacidade", href: "/privacidade" },
-    { label: "Contato", href: "/contato" },
   ],
 };
 

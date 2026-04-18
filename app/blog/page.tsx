@@ -2,12 +2,40 @@ import { getAllArticles } from "@/lib/content";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import type { Metadata } from "next";
+import { SITE_URL, itemListSchema, jsonLdScript } from "@/lib/schema";
+
+export const metadata: Metadata = {
+  title: "Blog — Artigos e Guias sobre Queda de Cabelo",
+  description:
+    "Artigos, guias práticos e dicas sobre queda de cabelo, calvície, minoxidil, finasterida e cuidados capilares — revisados por dermatologistas.",
+  alternates: { canonical: "/blog" },
+  openGraph: {
+    title: "Blog — Capilarmente",
+    description: "Artigos e guias sobre queda de cabelo e tratamentos capilares.",
+    type: "website",
+    url: `${SITE_URL}/blog`,
+    locale: "pt_BR",
+    siteName: "Capilarmente",
+  },
+};
 
 export default function BlogPage() {
   const articles = getAllArticles();
+  const listSchema = itemListSchema(
+    articles.map((a) => ({
+      title: a.title,
+      url: `${SITE_URL}/${a.categorySlug}/${a.slug}`,
+      description: a.description,
+    })),
+  );
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLdScript(listSchema)}
+      />
       <Header />
       <main className="pt-28 pb-24">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">

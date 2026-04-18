@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
+import { SITE_URL, itemListSchema, jsonLdScript } from "@/lib/schema";
 
 interface Props {
   params: {
@@ -33,9 +34,19 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: Props): Metadata {
   const config = getCategoryConfig(params.category);
   if (!config) return {};
+  const url = `/${params.category}`;
   return {
     title: config.seoTitle,
     description: config.seoDescription,
+    alternates: { canonical: url },
+    openGraph: {
+      title: config.seoTitle,
+      description: config.seoDescription,
+      type: "website",
+      url: `${SITE_URL}${url}`,
+      locale: "pt_BR",
+      siteName: "Capilarmente",
+    },
   };
 }
 
@@ -50,8 +61,20 @@ export default function CategoryPage({ params }: Props) {
   const dotClass = ACCENT_DOT[config.accent] ?? "bg-forest-500";
   const badgeClass = ACCENT_BADGE[config.accent] ?? ACCENT_BADGE.forest;
 
+  const listSchema = itemListSchema(
+    articles.map((a) => ({
+      title: a.title,
+      url: `${SITE_URL}/${a.categorySlug}/${a.slug}`,
+      description: a.description,
+    })),
+  );
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLdScript(listSchema)}
+      />
       <Header />
       <main className="pt-28 pb-24">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">

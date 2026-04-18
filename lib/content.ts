@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
-import { Article, Author } from "@/types";
+import { Article, Author, FaqItem } from "@/types";
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
 
@@ -98,6 +98,30 @@ export function getArticleBySlug(categorySlug: string, slug: string): Article | 
   return parseArticleFile(categorySlug, slug);
 }
 
+export function getRelatedArticles(article: Article, limit = 3): Article[] {
+  const all = getAllArticles().filter(
+    (a) => !(a.categorySlug === article.categorySlug && a.slug === article.slug),
+  );
+
+  const tagSet = new Set(article.tags);
+
+  const scored = all.map((candidate) => {
+    const sharedTags = candidate.tags.filter((t) => tagSet.has(t)).length;
+    const sameCategory = candidate.categorySlug === article.categorySlug ? 1 : 0;
+    return { article: candidate, score: sharedTags * 2 + sameCategory };
+  });
+
+  return scored
+    .filter((s) => s.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map((s) => s.article);
+}
+
+export function getArticlesByAuthor(authorSlug: string): Article[] {
+  return getAllArticles().filter((a) => a.author.slug === authorSlug);
+}
+
 function parseArticleFile(categorySlug: string, slug: string): Article | undefined {
   const extensions = [".mdx", ".md"];
   let filePath: string | null = null;
@@ -139,5 +163,6 @@ function parseArticleFile(categorySlug: string, slug: string): Article | undefin
     tags: (data.tags as string[]) ?? [],
     featured: (data.featured as boolean) ?? false,
     readingTime,
+    faq: (data.faq as FaqItem[] | undefined) ?? undefined,
   };
 }

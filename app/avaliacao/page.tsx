@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import AvaliacaoWizard from "@/components/avaliacao/AvaliacaoWizard";
 
 export const metadata: Metadata = {
-  title: "Avaliação Capilar Gratuita — Capilarmente",
+  title: "Avaliação Capilar Gratuita",
   description:
     "Faça uma avaliação personalizada da sua queda de cabelo em 5 minutos. Identifique as possíveis causas, severidade e receba recomendações de tratamento baseadas no seu perfil.",
   keywords: [
@@ -16,11 +16,15 @@ export const metadata: Metadata = {
     "calvície grau",
     "diagnóstico capilar online",
   ],
+  alternates: { canonical: "/avaliacao" },
   openGraph: {
     title: "Avaliação Capilar Gratuita — Capilarmente",
     description:
       "Descubra em 5 minutos a severidade da sua queda de cabelo e receba recomendações personalizadas de tratamento.",
     type: "website",
+    url: "https://capilarmente.com.br/avaliacao",
+    locale: "pt_BR",
+    siteName: "Capilarmente",
   },
 };
 

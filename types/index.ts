@@ -12,6 +12,12 @@ export interface Article {
   tags: string[];
   featured?: boolean;
   readingTime: number;
+  faq?: FaqItem[];
+}
+
+export interface FaqItem {
+  question: string;
+  answer: string;
 }
 
 export interface Author {

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Outfit } from "next/font/google";
 import "./globals.css";
+import { SITE_URL, organizationSchema, websiteSchema, jsonLdScript } from "@/lib/schema";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -15,15 +16,33 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Capilarmente — Tratamentos para Queda de Cabelo no Brasil",
-  description: "Guia completo sobre tratamentos para queda de cabelo e calvície no Brasil. Minoxidil, finasterida, transplante capilar e mais. Informações baseadas em evidências científicas.",
-  keywords: "queda de cabelo, calvície, minoxidil, finasterida, tratamento capilar, alopecia, Brasil, capilarmente",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Capilarmente — Tratamentos para Queda de Cabelo no Brasil",
+    template: "%s — Capilarmente",
+  },
+  description:
+    "Guia completo sobre tratamentos para queda de cabelo e calvície no Brasil. Minoxidil, finasterida, transplante capilar e mais. Informações baseadas em evidências científicas.",
+  keywords: [
+    "queda de cabelo",
+    "calvície",
+    "minoxidil",
+    "finasterida",
+    "tratamento capilar",
+    "alopecia",
+    "Brasil",
+    "capilarmente",
+  ],
+  alternates: { canonical: "/" },
   openGraph: {
     title: "Capilarmente — Tratamentos para Queda de Cabelo",
     description: "Guia completo sobre tratamentos para queda de cabelo no Brasil",
     type: "website",
     locale: "pt_BR",
+    siteName: "Capilarmente",
+    url: SITE_URL,
   },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({
@@ -33,6 +52,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className="scroll-smooth">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={jsonLdScript([organizationSchema(), websiteSchema()])}
+        />
+      </head>
       <body className={`${playfair.variable} ${outfit.variable} font-body bg-cream-50 text-warm-800 antialiased`}>
         {children}
       </body>
