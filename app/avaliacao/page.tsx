@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description:
       "Descubra em 5 minutos a severidade da sua queda de cabelo e receba recomendações personalizadas de tratamento.",
     type: "website",
-    url: "https://capilarmente.com.br/avaliacao",
+    url: "https://www.capilarmente.com.br/avaliacao",
     locale: "pt_BR",
     siteName: "Capilarmente",
   },

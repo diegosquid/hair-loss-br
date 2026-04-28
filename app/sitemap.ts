@@ -3,7 +3,7 @@ import { getAllArticles, authors } from "@/lib/content";
 
 export const dynamic = "force-static";
 
-const BASE_URL = "https://capilarmente.com.br";
+const BASE_URL = "https://www.capilarmente.com.br";
 
 const STATIC_PAGES = [
   { path: "", priority: 1.0, changefreq: "weekly" },

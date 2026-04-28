@@ -1,6 +1,6 @@
 import { Article, Author } from "@/types";
 
-export const SITE_URL = "https://capilarmente.com.br";
+export const SITE_URL = "https://www.capilarmente.com.br";
 export const SITE_NAME = "Capilarmente";
 
 type JsonLd = Record<string, unknown>;
@@ -61,9 +61,14 @@ export function breadcrumbSchema(items: { name: string; url: string }[]): JsonLd
 
 export function articleSchema(article: Article): JsonLd {
   const url = `${SITE_URL}/${article.categorySlug}/${article.slug}`;
+  // Multi-type: BlogPosting (for /blog/*) or Article (for everything else),
+  // combined with MedicalWebPage to retain medical-content semantics for E-E-A-T.
+  // The Article-family @type unlocks Google's Article rich result; MedicalWebPage
+  // adds reviewedBy/lastReviewed credibility signals for YMYL content.
+  const primaryType = article.categorySlug === "blog" ? "BlogPosting" : "Article";
   return {
     "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
+    "@type": [primaryType, "MedicalWebPage"],
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
     headline: article.title,
     description: article.description,
@@ -71,6 +76,7 @@ export function articleSchema(article: Article): JsonLd {
     inLanguage: "pt-BR",
     datePublished: article.publishedAt,
     dateModified: article.updatedAt ?? article.publishedAt,
+    lastReviewed: article.updatedAt ?? article.publishedAt,
     author: {
       "@type": "Person",
       "@id": `${SITE_URL}/autores/${article.author.slug}#person`,
@@ -85,9 +91,18 @@ export function articleSchema(article: Article): JsonLd {
           url: `${SITE_URL}/autores/${article.medicalReviewer.slug}`,
         }
       : undefined,
-    publisher: { "@id": `${SITE_URL}/#organization` },
+    publisher: {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      name: SITE_NAME,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/icon.svg`,
+      },
+    },
     keywords: article.tags.join(", "),
     about: article.category,
+    articleSection: article.category,
   };
 }
 
