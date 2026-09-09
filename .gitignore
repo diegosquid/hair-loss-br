@@ -7,3 +7,7 @@ dist/
 *.log
 logs/
 .DS_Store
+.vercel
+.env*.local
+
+reports/vercel-*-before.json

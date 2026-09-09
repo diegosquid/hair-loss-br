@@ -1,3 +1,4 @@
+import { socialImages, formatDate } from "@/lib/site";
 import { getAllArticles } from "@/lib/content";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -8,7 +9,7 @@ import { SITE_URL, itemListSchema, jsonLdScript } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Blog — Artigos e Guias sobre Queda de Cabelo",
   description:
-    "Artigos, guias práticos e dicas sobre queda de cabelo, calvície, minoxidil, finasterida e cuidados capilares — revisados por dermatologistas.",
+    "Artigos, guias práticos e dicas sobre queda de cabelo, calvície, minoxidil, finasterida e cuidados capilares no Brasil.",
   alternates: { canonical: "/blog" },
   openGraph: {
     title: "Blog — Capilarmente",
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/blog`,
     locale: "pt_BR",
     siteName: "Capilarmente",
+    images: socialImages,
   },
 };
 
@@ -37,7 +39,7 @@ export default function BlogPage() {
         dangerouslySetInnerHTML={jsonLdScript(listSchema)}
       />
       <Header />
-      <main className="pt-28 pb-24">
+      <main id="conteudo" className="pt-28 pb-24">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
           {/* Page header */}
           <div className="text-center mb-14">
@@ -80,7 +82,7 @@ export default function BlogPage() {
 
                   <div className="flex items-center justify-between text-[13px] text-warm-400 pt-4 border-t border-warm-100">
                     <span className="font-medium">{article.author.name}</span>
-                    <span>{new Date(article.publishedAt).toLocaleDateString("pt-BR")}</span>
+                    <span>{formatDate(article.publishedAt)}</span>
                   </div>
                 </div>
               </Link>

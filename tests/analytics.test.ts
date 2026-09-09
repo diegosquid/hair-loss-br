@@ -1,0 +1,33 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { CONSENT_KEY, GA_ID, eventProperties, pageProperties, getConsent, measurePage, recordEvent, setConsent } from '../lib/analytics';
+test('analytics discards raw URL data and accepts only bounded event fields',()=>{
+ const props=pageProperties('/avaliacao?email=secret#health','https://google.com/search?q=health');
+ assert.equal(props.page_location,'https://www.capilarmente.com.br/avaliacao');
+ assert.equal(props.page_referrer,'https://google.com/');
+ assert.equal(pageProperties('/private-personal-data').page_location,'https://www.capilarmente.com.br/404');
+ assert.deepEqual(eventProperties('quiz_complete',{step:2,product:'abc',answers:'private'} as never),{});
+ assert.deepEqual(eventProperties('quiz_step',{step:2}),{step:2});
+ for(const step of [0,7,NaN,1.5]) assert.deepEqual(eventProperties('quiz_step',{step}),{});
+ assert.deepEqual(eventProperties('affiliate_click',{product:'person@example.com'}),{});
+});
+test('tag and events are blocked before consent, in previews, after refusal and under DNT',()=>{
+ const storage=new Map<string,string>();let loads=0;let reloads=0;const cookieWrites:string[]=[];
+ const fakeWindow={dataLayer:[] as unknown[],dispatchEvent:()=>{},gtag:undefined} as unknown as Window;
+ Object.defineProperty(globalThis,'window',{value:fakeWindow,configurable:true});
+ Object.defineProperty(globalThis,'navigator',{value:{doNotTrack:'0'},configurable:true});
+ Object.defineProperty(globalThis,'location',{value:{hostname:'www.capilarmente.com.br',pathname:'/avaliacao',reload:()=>{reloads++;}},configurable:true});
+ Object.defineProperty(globalThis,'localStorage',{value:{getItem:(k:string)=>storage.get(k)||null,setItem:(k:string,v:string)=>storage.set(k,v)},configurable:true});
+ Object.defineProperty(globalThis,'document',{value:{referrer:'https://google.com/?q=private',createElement:()=>({}),head:{appendChild:()=>{loads++;}},get cookie(){return '_ga=abc; _ga_5HGNQ66T34=xyz; other=keep';},set cookie(v:string){cookieWrites.push(v);}},configurable:true});
+ assert.equal(getConsent(),'pending'); measurePage('/avaliacao');recordEvent('quiz_start');assert.equal(loads,0);assert.equal(fakeWindow.dataLayer!.length,0);
+ storage.set(CONSENT_KEY,'granted');location.hostname='preview.vercel.app';measurePage('/avaliacao');assert.equal(loads,0);
+ location.hostname='www.capilarmente.com.br';measurePage('/avaliacao');measurePage('/avaliacao');assert.equal(loads,1);
+ recordEvent('quiz_complete',{answers:'private',step:5} as never);
+ const commands=fakeWindow.dataLayer!.map(a=>Array.from(a as ArrayLike<unknown>));
+ assert.equal(commands.filter(c=>c[0]==='event'&&c[1]==='page_view').length,1);
+ const complete=commands.find(c=>c[1]==='quiz_complete')!;assert.ok(complete);assert.ok(!JSON.stringify(complete).includes('private'));assert.ok(!('step' in (complete[2] as object)));
+ Object.defineProperty(globalThis,'navigator',{value:{doNotTrack:'1'},configurable:true});const before=fakeWindow.dataLayer!.length;recordEvent('quiz_start');assert.equal(fakeWindow.dataLayer!.length,before);
+ setConsent('denied');assert.equal(getConsent(),'denied');assert.equal(reloads,1);assert.equal((fakeWindow as unknown as Record<string,unknown>)[`ga-disable-${GA_ID}`],true);
+ assert.ok(cookieWrites.length>0);assert.ok(cookieWrites.every(c=>c.startsWith('_ga')));
+ recordEvent('quiz_start');assert.equal(fakeWindow.dataLayer!.length,before);
+});

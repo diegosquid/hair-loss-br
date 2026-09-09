@@ -18,25 +18,25 @@ export const categories: Record<string, CategoryConfig> = {
     accent: "forest",
     seoTitle: "Medicamentos para Queda de Cabelo",
     seoDescription:
-      "Guia completo sobre medicamentos para queda de cabelo: minoxidil, finasterida, dutasterida e mais. Informações verificadas por dermatologistas.",
+      "Guia completo sobre medicamentos para queda de cabelo: minoxidil, finasterida, dutasterida e mais. Entenda usos, riscos e dúvidas para discutir em consulta.",
   },
   tratamentos: {
     slug: "tratamentos",
     name: "Tratamentos",
     label: "Guia de Tratamentos",
     description:
-      "Procedimentos e terapias comprovados para restauração capilar no Brasil.",
+      "Conheça procedimentos e terapias capilares, suas evidências, riscos e custos.",
     accent: "sage",
     seoTitle: "Tratamentos para Queda de Cabelo",
     seoDescription:
-      "Transplante capilar, PRP, laser e microagulhamento. Tratamentos com eficácia comprovada para queda de cabelo.",
+      "Transplante capilar, PRP, laser e microagulhamento. Entenda as evidências e os limites de cada opção para queda de cabelo.",
   },
   causas: {
     slug: "causas",
     name: "Causas",
     label: "Causas da Queda de Cabelo",
     description:
-      "Entenda as causas da queda de cabelo e como identificar o seu tipo de alopecia.",
+      "Entenda as causas da queda de cabelo e quando procurar uma avaliação profissional.",
     accent: "terra",
     seoTitle: "Causas da Queda de Cabelo",
     seoDescription:

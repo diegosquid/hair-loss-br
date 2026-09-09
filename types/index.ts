@@ -6,6 +6,11 @@ export interface Article {
   content: string;
   publishedAt: string;
   updatedAt?: string;
+  seoTitle?: string;
+  image: string;
+  imageAlt: string;
+  toc: { id: string; title: string }[];
+  correctionNote?: string;
   author: Author;
   medicalReviewer?: Author;
   category: string;
@@ -21,6 +26,7 @@ export interface FaqItem {
 }
 
 export interface Author {
+  kind?: "Organization" | "Person";
   name: string;
   slug: string;
   title: string;

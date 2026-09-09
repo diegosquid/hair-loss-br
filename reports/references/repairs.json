@@ -1,0 +1,262 @@
+[
+  {
+    "file": "content/tratamentos/exossomos-capilar.mdx",
+    "changes": [
+      {
+        "old": "10.2147/CCID.S472946",
+        "new": "10.2147/ccid.s543451",
+        "title": "Exosomes and Hair Regeneration: A Systematic Review of Clinical Evidence Across Alopecia Types and Exosome Sources"
+      },
+      {
+        "old": "10.3390/pharmaceutics16101310",
+        "new": "10.1097/dss.0000000000004480",
+        "title": "Exosomes for Treating Hair Loss: A Review of Clinical Studies"
+      }
+    ]
+  },
+  {
+    "file": "content/tratamentos/microneedling-rf-capilar.mdx",
+    "changes": [
+      {
+        "old": "10.1016/j.clindermatol.2025.05.013",
+        "new": "10.1016/j.clindermatol.2025.07.006",
+        "title": "Microneedling radiofrequency followed by topical exosome application therapy for pattern hair loss: A scoping review and prospective study"
+      }
+    ]
+  },
+  {
+    "file": "content/tratamentos/transplante-capilar.mdx",
+    "changes": [
+      {
+        "old": "10.1016/j.det.2007.09.007",
+        "new": "10.1080/14764170701817056",
+        "title": "Hair transplantation for men"
+      }
+    ]
+  },
+  {
+    "file": "content/tratamentos/intradermoterapia-capilar.mdx",
+    "changes": [
+      {
+        "old": "10.1159/000527869",
+        "new": "10.1159/000528446",
+        "title": "Scalp Microinfusion: A Novel Drug Delivery Technique for Hair Loss Treatment"
+      },
+      {
+        "old": "10.1016/j.jdin.2023.04.002",
+        "new": "10.1016/j.jdin.2023.04.011",
+        "title": "Evaluation of hair regrowth after minoxidil and dutasteride tattooing in men with androgenetic alopecia"
+      }
+    ]
+  },
+  {
+    "file": "content/causas/alopecia-cicatricial.mdx",
+    "changes": [
+      {
+        "old": "10.1016/j.abdp.2022.03.017",
+        "new": "10.1016/j.abd.2021.08.008",
+        "title": "Lichen planopilaris and frontal fibrosing alopecia: review and update of diagnostic and therapeutic features"
+      }
+    ]
+  },
+  {
+    "file": "content/causas/queda-cabelo-pos-covid.mdx",
+    "changes": [
+      {
+        "old": "10.1111/jdv.17378",
+        "new": "10.1111/ijd.15482",
+        "title": "Telogen effluvium in the new SARS‐CoV‐2 era"
+      }
+    ]
+  },
+  {
+    "file": "content/causas/queda-cabelo-feminina.mdx",
+    "changes": [
+      {
+        "old": "10.1016/j.jaad.2021.02.026",
+        "new": "10.1016/j.jaad.2021.02.054",
+        "title": "Safety of low-dose oral minoxidil for hair loss: A multicenter study of 1404 patients"
+      }
+    ]
+  },
+  {
+    "file": "content/causas/tricotilomania.mdx",
+    "changes": [
+      {
+        "old": "10.1016/j.jpsychires.2022.07.006",
+        "new": "10.1016/j.jpsychires.2022.06.058",
+        "title": "Prevalence and gender distribution of trichotillomania: A systematic review and meta-analysis"
+      },
+      {
+        "old": "10.1016/j.comppsych.2024.152461",
+        "new": "10.1016/j.comppsych.2024.152506",
+        "title": "The genetics of trichotillomania and excoriation disorder: A systematic review"
+      }
+    ]
+  },
+  {
+    "file": "content/medicamentos/ciproterona-queda-cabelo.mdx",
+    "changes": [
+      {
+        "old": "10.1016/S0015-0282(02)04555-6",
+        "new": "10.1016/s0015-0282(02)04551-x",
+        "title": "Treatment of hyperandrogenic alopecia in women"
+      }
+    ]
+  },
+  {
+    "file": "content/medicamentos/zinco-saude-capilar.mdx",
+    "changes": [
+      {
+        "old": "10.1111/jocd.15873",
+        "new": "10.7759/cureus.67264",
+        "title": "Zinc Status in Kurdish Adults With Hair Loss"
+      }
+    ]
+  },
+  {
+    "file": "content/medicamentos/cafeina-topica.mdx",
+    "changes": [
+      {
+        "old": "10.4103/0974-7753.100090",
+        "new": "10.4103/0974-7753.100096",
+        "title": "Role of Caffeine in the Management of Androgenetic Alopecia"
+      }
+    ]
+  },
+  {
+    "file": "content/medicamentos/minoxidil-oral.mdx",
+    "changes": [
+      {
+        "old": "10.1016/j.jaad.2020.02.012",
+        "new": "10.1016/j.jaad.2019.04.054",
+        "title": "Effectiveness and safety of low-dose oral minoxidil in male androgenetic alopecia"
+      },
+      {
+        "old": "10.1016/j.jaad.2021.02.026",
+        "new": "10.1016/j.jaad.2021.02.054",
+        "title": "Safety of low-dose oral minoxidil for hair loss: A multicenter study of 1404 patients"
+      }
+    ]
+  },
+  {
+    "file": "content/medicamentos/alfaestradiol.mdx",
+    "changes": [
+      {
+        "old": "10.1016/j.abd.2023.03.005",
+        "new": "10.1016/j.abd.2022.09.006",
+        "title": "Female-pattern hair loss: therapeutic update"
+      },
+      {
+        "old": "10.1002/ddr.20235",
+        "new": "10.1002/ddr.20244",
+        "title": "17α‐estradiol: a less‐feminizing estrogen"
+      }
+    ]
+  },
+  {
+    "file": "content/medicamentos/tretinoina-adjuvante-minoxidil.mdx",
+    "changes": [
+      {
+        "old": "10.1016/S0190-9622(86)70242-9",
+        "new": "10.1016/s0190-9622(86)80024-x",
+        "title": "Topical tretinoin for hair growth promotion"
+      },
+      {
+        "old": "10.1016/S0190-9622(85)70158-5",
+        "new": "10.1016/s0190-9622(85)70157-0",
+        "title": "Topical minoxidil in early male pattern baldness"
+      }
+    ]
+  },
+  {
+    "file": "content/medicamentos/saw-palmetto.mdx",
+    "changes": [
+      {
+        "old": "10.1111/dth.12386",
+        "new": "10.1111/dth.12390",
+        "title": "Multi-therapies in androgenetic alopecia: review and clinical experiences"
+      }
+    ]
+  },
+  {
+    "file": "content/medicamentos/minoxidil-5-vs-2.mdx",
+    "changes": [
+      {
+        "old": "10.1046/j.1365-2133.1998.02110.x",
+        "new": "10.1046/j.1365-2133.1998.02115.x",
+        "title": "Minoxidil upregulates the expression of vascular endothelial growth factor in human hair dermal papilla cells"
+      },
+      {
+        "old": "10.1046/j.0022-202x.2001.01567.x",
+        "new": "10.1046/j.0022-202x.2001.01570.x",
+        "title": "Minoxidil-Induced Hair Growth is Mediated by Adenosine in Cultured Dermal Papilla Cells: Possible Involvement of Sulfonylurea Receptor 2B as a Target of Minoxidil"
+      },
+      {
+        "old": "10.1016/j.jaad.2010.09.026",
+        "new": "10.1016/j.jaad.2010.09.724",
+        "title": "A randomized, single-blind trial of 5% minoxidil foam once daily versus 2% minoxidil solution twice daily in the treatment of androgenetic alopecia in women"
+      },
+      {
+        "old": "10.1067/mjd.2002.119614",
+        "new": "10.1067/mjd.2002.119104",
+        "title": "Allergic contact dermatitis to topical minoxidil solution: Etiology and treatment"
+      }
+    ]
+  },
+  {
+    "file": "content/medicamentos/flutamida-alopecia-feminina.mdx",
+    "changes": [
+      {
+        "old": "10.1002/1097-0142(19930201)71:3+<1046::AID-CNCR2820711408>3.0.CO;2-M",
+        "new": "10.1002/1097-0142(19930201)71:3+<1046::aid-cncr2820711424>3.0.co;2-m",
+        "title": "Antiandrogenic drugs"
+      },
+      {
+        "old": "10.1111/jocd.14771",
+        "new": "10.1111/jocd.14788",
+        "title": "Comparison between “5% minoxidil plus 2% flutamide” solution vs. “5% minoxidil” solution in the treatment of androgenetic alopecia"
+      }
+    ]
+  },
+  {
+    "file": "content/medicamentos/biotina-cabelo.mdx",
+    "changes": [
+      {
+        "old": "10.7759/cureus.5950",
+        "new": "10.7759/cureus.5470",
+        "title": "Clinically Significant Lab Errors due to Vitamin B7 (Biotin) Supplementation: A Case Report Following a Recent FDA Warning"
+      }
+    ]
+  },
+  {
+    "file": "content/medicamentos/finasterida.mdx",
+    "changes": [
+      {
+        "old": "10.1016/j.jaad.2010.11.018",
+        "new": "10.1111/j.1529-8019.2011.01441.x",
+        "title": "Finasteride, 1 mg daily administration on male androgenetic alopecia in different age groups: 10-year follow-up"
+      }
+    ]
+  },
+  {
+    "file": "content/medicamentos/bicalutamida-alopecia-feminina.mdx",
+    "changes": [
+      {
+        "old": "10.1016/j.jaad.2020.03.068",
+        "new": "10.1016/j.jaad.2020.04.054",
+        "title": "Bicalutamide: A potential new oral antiandrogenic drug for female pattern hair loss"
+      }
+    ]
+  },
+  {
+    "file": "content/medicamentos/omega-3-cabelo.mdx",
+    "changes": [
+      {
+        "old": "10.1016/j.jnutbio.2022.109223",
+        "new": "10.1016/j.celrep.2022.111804",
+        "title": "Consumption of fish oil high-fat diet induces murine hair loss via epidermal fatty acid binding protein in skin macrophages"
+      }
+    ]
+  }
+]

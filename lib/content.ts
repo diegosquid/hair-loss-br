@@ -7,59 +7,15 @@ import { Article, Author, FaqItem } from "@/types";
 const CONTENT_DIR = path.join(process.cwd(), "content");
 
 export const authors: Record<string, Author> = {
-  "dr-silva": {
-    name: "Dr. Ricardo Silva",
-    slug: "dr-silva",
-    title: "Dermatologista",
-    credentials: "CRM-SP 123456 | RQE 78901",
-    bio: "Dermatologista com 15 anos de experiência em tricologia e tratamentos capilares. Membro da Sociedade Brasileira de Dermatologia.",
-    specialties: ["Dermatologia", "Tricologia", "Alopecia"],
-    affiliations: ["Sociedade Brasileira de Dermatologia", "American Academy of Dermatology"],
-  },
-  "dra-oliveira": {
-    name: "Dra. Carolina Oliveira",
-    slug: "dra-oliveira",
-    title: "Endocrinologista",
-    credentials: "CRM-RJ 654321 | RQE 10987",
-    bio: "Endocrinologista especializada em distúrbios hormonais que afetam o cabelo. Pesquisadora em alopecia androgenética feminina.",
-    specialties: ["Endocrinologia", "Dermatologia Hormonal", "Alopecia Feminina"],
-    affiliations: ["Sociedade Brasileira de Endocrinologia", "International Society of Hair Restoration Surgery"],
-  },
-  "dr-santos": {
-    name: "Dr. Fernando Santos",
-    slug: "dr-santos",
-    title: "Cirurgião Capilar",
-    credentials: "CRM-SP 234567 | RQE 34567",
-    bio: "Cirurgião especializado em transplante capilar com mais de 3.000 procedimentos FUE realizados. Membro da ISHRS.",
-    specialties: ["Transplante Capilar", "Cirurgia FUE/FUT", "Restauração Capilar"],
-    affiliations: ["International Society of Hair Restoration Surgery", "Associação Brasileira de Cirurgia da Restauração Capilar"],
-  },
-  "dra-costa": {
-    name: "Dra. Mariana Costa",
-    slug: "dra-costa",
-    title: "Tricologista",
-    credentials: "CRM-MG 345678 | RQE 45678",
-    bio: "Tricologista com formação em dermatologia e especialização em diagnóstico capilar. Pesquisadora em novas terapias para alopecia.",
-    specialties: ["Tricologia", "Diagnóstico Capilar", "Terapia com Laser"],
-    affiliations: ["Sociedade Brasileira de Dermatologia", "World Trichology Society"],
-  },
-  "dr-almeida": {
-    name: "Dr. Paulo Almeida",
-    slug: "dr-almeida",
-    title: "Dermatologista",
-    credentials: "CRM-RJ 456789 | RQE 56789",
-    bio: "Dermatologista com foco em alopecia androgenética e terapias farmacológicas. Professor associado com publicações em periódicos internacionais.",
-    specialties: ["Farmacologia Dermatológica", "Alopecia Androgenética", "Pesquisa Clínica"],
-    affiliations: ["Sociedade Brasileira de Dermatologia", "European Academy of Dermatology and Venereology"],
-  },
-  "dra-lima": {
-    name: "Dra. Juliana Lima",
-    slug: "dra-lima",
-    title: "Nutrologista",
-    credentials: "CRM-SP 567890 | RQE 67890",
-    bio: "Nutrologista especializada na relação entre nutrição e saúde capilar. Experiência em tratamentos integradores para queda de cabelo.",
-    specialties: ["Nutrologia", "Nutrição Capilar", "Suplementação"],
-    affiliations: ["Associação Brasileira de Nutrologia", "International Society of Dermatology"],
+  "equipe-editorial": {
+    kind: "Organization",
+    name: "Redação Capilarmente",
+    slug: "equipe-editorial",
+    title: "Publicação independente",
+    credentials: "",
+    bio: "Conteúdo editorial produzido com apoio de ferramentas de inteligência artificial e consulta às fontes indicadas em cada artigo. Não declaramos revisão médica independente para este conteúdo.",
+    specialties: ["Informação sobre queda de cabelo", "Comparação de custos", "Cuidados capilares"],
+    affiliations: [],
   },
 };
 
@@ -139,12 +95,23 @@ function parseArticleFile(categorySlug: string, slug: string): Article | undefin
   const raw = fs.readFileSync(filePath, "utf-8");
   const { data, content } = matter(raw);
 
-  const htmlContent = marked(content) as string;
+  // The page template owns H1. Keep article headings at H2 or below.
+  const body = content.replace(/^# .+\r?\n+/m, "");
+  let htmlContent = marked(body) as string;
+  const usedIds = new Map<string, number>();
+  const toc: { id: string; title: string }[] = [];
+  htmlContent = htmlContent.replace(/<h2>([\s\S]*?)<\/h2>/g, (_, inner: string) => {
+    const title = inner.replace(/<[^>]*>/g, "");
+    const base = title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "secao";
+    const count = usedIds.get(base) ?? 0;
+    usedIds.set(base, count + 1);
+    const id = count ? `${base}-${count + 1}` : base;
+    toc.push({ id, title });
+    return `<h2 id="${id}">${inner}</h2>`;
+  });
 
-  const author = authors[data.author as string] ?? authors["dr-silva"];
-  const medicalReviewer = data.medicalReviewer
-    ? authors[data.medicalReviewer as string]
-    : undefined;
+  const author = authors[data.author as string] ?? authors["equipe-editorial"];
+  const medicalReviewer = undefined; // No independently verified medical reviewers registered.
 
   const wordCount = content.split(/\s+/).length;
   const readingTime = data.readingTime ?? Math.ceil(wordCount / 200);
@@ -153,6 +120,11 @@ function parseArticleFile(categorySlug: string, slug: string): Article | undefin
     slug,
     categorySlug,
     title: data.title as string,
+    seoTitle: data.seoTitle as string | undefined,
+    image: `/images/articles/${categorySlug}-${slug}.png`,
+    imageAlt: `Guia ilustrado: ${data.title}`,
+    toc,
+    correctionNote: data.correctionNote as string | undefined,
     description: data.description as string,
     content: htmlContent,
     publishedAt: data.publishedAt as string,

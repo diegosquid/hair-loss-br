@@ -9,6 +9,7 @@ PROJECT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 LOG_DIR="$PROJECT_DIR/logs"
 DATA_BRT=$(TZ="America/Sao_Paulo" date +%Y-%m-%d)
 HORA_BRT=$(TZ="America/Sao_Paulo" date +%H)
+mkdir -p "$LOG_DIR"
 DIA_MES=$(TZ="America/Sao_Paulo" date +%-d)
 
 # Só roda em dias ímpares (mesmo padrão do */2 no crontab)
@@ -24,7 +25,7 @@ fi
 # Verifica se já rodou hoje (procura log do dia com "CRON END")
 if ls "$LOG_DIR"/cron-${DATA_BRT}-*.log 1>/dev/null 2>&1; then
   for logfile in "$LOG_DIR"/cron-${DATA_BRT}-*.log; do
-    if grep -q "CRON END" "$logfile" 2>/dev/null; then
+    if grep -q "CRON SUCCESS" "$logfile" 2>/dev/null; then
       # Já rodou com sucesso hoje — nada a fazer
       exit 0
     fi

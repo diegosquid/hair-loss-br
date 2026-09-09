@@ -25,7 +25,7 @@ export default function Header() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
           ? "bg-cream-50/90 backdrop-blur-xl shadow-soft border-b border-warm-200/40"
-          : "bg-transparent"
+          : "bg-cream-50/95"
       }`}
     >
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
@@ -67,13 +67,13 @@ export default function Header() {
               className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 text-[13.5px] font-semibold text-white bg-forest-700 rounded-full hover:bg-forest-600 shadow-soft hover:shadow-soft-md transition-all duration-300 hover:-translate-y-[1px]"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-300 animate-pulse" />
-              Avaliacao Gratis
+              Roteiro gratuito
             </Link>
 
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               className="md:hidden w-10 h-10 rounded-full flex items-center justify-center hover:bg-warm-100 transition-colors"
-              aria-label="Menu"
+              aria-label="Menu" aria-expanded={mobileOpen} aria-controls="menu-mobile"
             >
               <div className="space-y-1.5">
                 <div className={`w-5 h-[1.5px] bg-warm-700 rounded-full transition-all duration-300 ${mobileOpen ? "rotate-45 translate-y-[5.5px]" : ""}`} />
@@ -87,6 +87,7 @@ export default function Header() {
 
       {/* Mobile menu */}
       <div
+        id="menu-mobile" hidden={!mobileOpen}
         className={`md:hidden absolute top-full left-0 right-0 bg-cream-50/98 backdrop-blur-xl border-b border-warm-200/40 shadow-soft-md transition-all duration-300 overflow-hidden ${
           mobileOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"
         }`}
@@ -107,7 +108,7 @@ export default function Header() {
             onClick={() => setMobileOpen(false)}
             className="block mt-2 px-4 py-3 text-[15px] font-semibold text-white bg-forest-700 rounded-xl text-center hover:bg-forest-600 transition-colors"
           >
-            Avaliacao Gratis
+            Roteiro gratuito
           </Link>
         </nav>
       </div>

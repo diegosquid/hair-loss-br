@@ -6,8 +6,7 @@
 set -uo pipefail
 
 # PATH completo — cron roda com PATH mínimo (/usr/bin:/bin)
-export PATH="/Users/diegodmacedo/.local/bin:/Users/diegodmacedo/.nvm/versions/node/v22.12.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-export HOME="/Users/diegodmacedo"
+export PATH="/Users/diegodmacedo/.local/bin:/Users/diegodmacedo/.nvm/versions/node/v22.13.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 PROJECT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 
@@ -18,6 +17,7 @@ export CLAUDE_CODE_OAUTH_TOKEN
 # SSH agent para git push/pull funcionar
 # Carrega explicitamente a chave usada pelo GitHub (id_diego)
 eval "$(ssh-agent -s)" >/dev/null 2>&1
+trap '[ -n "${SSH_AGENT_PID:-}" ] && kill "$SSH_AGENT_PID" 2>/dev/null || true' EXIT
 ssh-add --apple-use-keychain "$HOME/.ssh/id_diego" 2>/dev/null || ssh-add "$HOME/.ssh/id_diego" 2>/dev/null || true
 
 # Limpa variáveis que impedem execução dentro de outra sessão Claude
@@ -42,16 +42,14 @@ cd "$PROJECT_DIR"
 log "Diretorio: $(pwd)"
 log "Branch: $(git branch --show-current 2>&1)"
 
-# Garante que estamos no branch main atualizado
-log "--- git pull ---"
-if ! git diff --quiet 2>/dev/null; then
-  log "Unstaged changes detectadas, fazendo git stash"
-  git stash >> "$LOG_FILE" 2>&1 || true
+# Preserve other work and never publish from an unexpected branch.
+if [ "$(git branch --show-current)" != "main" ] || [ -n "$(git status --porcelain)" ]; then
+  log "ERRO: branch diferente de main ou alteracoes locais; nenhuma alteracao foi guardada ou descartada"
+  exit 1
 fi
-if git pull origin main --rebase >> "$LOG_FILE" 2>&1; then
-  log "git pull OK"
-else
-  log "WARN: git pull falhou (continuando mesmo assim)"
+if ! git pull --ff-only origin main >> "$LOG_FILE" 2>&1; then
+  log "ERRO: nao foi possivel atualizar main; publicacao interrompida"
+  exit 1
 fi
 
 # Executa o agente Claude
@@ -70,4 +68,6 @@ fi
 # Limpa ssh-agent pra nao acumular processos
 [ -n "${SSH_AGENT_PID:-}" ] && kill "$SSH_AGENT_PID" 2>/dev/null || true
 
+if [ "$CLAUDE_EXIT" -eq 0 ]; then log "=== CRON SUCCESS ==="; fi
 log "=== CRON END ==="
+exit "$CLAUDE_EXIT"

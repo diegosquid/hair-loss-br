@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Outfit } from "next/font/google";
 import "./globals.css";
+import SiteAnalytics from "@/components/SiteAnalytics";
+import { socialImages } from "@/lib/site";
 import { SITE_URL, organizationSchema, websiteSchema, jsonLdScript } from "@/lib/schema";
 
 const playfair = Playfair_Display({
@@ -41,8 +43,10 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     siteName: "Capilarmente",
     url: SITE_URL,
+    images: socialImages,
   },
-  robots: { index: true, follow: true },
+  twitter: { card: "summary_large_image", images: socialImages.map(i=>i.url) },
+  robots: { index: true, follow: true, "max-image-preview": "large" },
 };
 
 export default function RootLayout({
@@ -59,7 +63,9 @@ export default function RootLayout({
         />
       </head>
       <body className={`${playfair.variable} ${outfit.variable} font-body bg-cream-50 text-warm-800 antialiased`}>
+        <a className="skip-link" href="#conteudo">Pular para o conteúdo</a>
         {children}
+        <SiteAnalytics />
       </body>
     </html>
   );

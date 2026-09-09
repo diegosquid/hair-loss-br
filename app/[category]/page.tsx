@@ -1,3 +1,4 @@
+import { socialImages } from "@/lib/site";
 import { getArticlesByCategory } from "@/lib/content";
 import { getCategoryConfig, getAllCategorySlugs } from "@/lib/categories";
 import Header from "@/components/Header";
@@ -8,9 +9,7 @@ import { Metadata } from "next";
 import { SITE_URL, itemListSchema, jsonLdScript } from "@/lib/schema";
 
 interface Props {
-  params: {
-    category: string;
-  };
+  params: Promise<{ category: string }>;
 }
 
 const ACCENT_DOT: Record<string, string> = {
@@ -31,7 +30,8 @@ export function generateStaticParams() {
     .map((slug) => ({ category: slug }));
 }
 
-export function generateMetadata({ params }: Props): Metadata {
+export async function generateMetadata({ params: routeParams }: Props): Promise<Metadata> {
+  const params = await routeParams;
   const config = getCategoryConfig(params.category);
   if (!config) return {};
   const url = `/${params.category}`;
@@ -46,11 +46,13 @@ export function generateMetadata({ params }: Props): Metadata {
       url: `${SITE_URL}${url}`,
       locale: "pt_BR",
       siteName: "Capilarmente",
+      images: socialImages,
     },
   };
 }
 
-export default function CategoryPage({ params }: Props) {
+export default async function CategoryPage({ params: routeParams }: Props) {
+  const params = await routeParams;
   const config = getCategoryConfig(params.category);
 
   if (!config || params.category === "blog") {
@@ -76,7 +78,7 @@ export default function CategoryPage({ params }: Props) {
         dangerouslySetInnerHTML={jsonLdScript(listSchema)}
       />
       <Header />
-      <main className="pt-28 pb-24">
+      <main id="conteudo" className="pt-28 pb-24">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
           {/* Page header */}
           <div className="text-center mb-14">

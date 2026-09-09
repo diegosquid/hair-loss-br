@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { EDITORIAL_UPDATED } from "@/lib/site";
 import { getAllArticles, authors } from "@/lib/content";
 
 export const dynamic = "force-static";
@@ -15,12 +16,13 @@ const STATIC_PAGES = [
   { path: "autores", priority: 0.5, changefreq: "monthly" },
   { path: "sobre", priority: 0.5, changefreq: "monthly" },
   { path: "editorial", priority: 0.3, changefreq: "monthly" },
+  { path: "contato", priority: 0.3, changefreq: "monthly" },
   { path: "privacidade", priority: 0.3, changefreq: "monthly" },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const articles = getAllArticles();
-  const today = new Date().toISOString().split("T")[0];
+  const today = EDITORIAL_UPDATED;
 
   const staticEntries: MetadataRoute.Sitemap = STATIC_PAGES.map((page) => ({
     url: `${BASE_URL}/${page.path}`,

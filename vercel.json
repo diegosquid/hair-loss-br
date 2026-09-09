@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    { "source": "/:path*", "has": [{ "type": "host", "value": "capilarmente.com.br" }], "destination": "https://www.capilarmente.com.br/:path*", "permanent": true },
+    { "source": "/autores/dr-silva", "destination": "/autores/equipe-editorial", "permanent": true },
+    { "source": "/autores/dr-santos", "destination": "/autores/equipe-editorial", "permanent": true },
+    { "source": "/autores/dr-almeida", "destination": "/autores/equipe-editorial", "permanent": true },
+    { "source": "/autores/dra-oliveira", "destination": "/autores/equipe-editorial", "permanent": true },
+    { "source": "/autores/dra-costa", "destination": "/autores/equipe-editorial", "permanent": true },
+    { "source": "/autores/dra-lima", "destination": "/autores/equipe-editorial", "permanent": true }
+  ]
+}

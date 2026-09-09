@@ -1,0 +1,769 @@
+{
+  "checkedAt": "2026-09-09T23:31:37.717Z",
+  "pages": 95,
+  "articles": 83,
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "url": "https://www.capilarmente.com.br/",
+      "title": "Queda de cabelo: cuidados, tratamentos e custos",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br",
+      "ogImage": "https://www.capilarmente.com.br/images/capilarmente-social.png",
+      "article": false
+    },
+    {
+      "url": "https://www.capilarmente.com.br/tratamentos",
+      "title": "Tratamentos para Queda de Cabelo — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/tratamentos",
+      "ogImage": "https://www.capilarmente.com.br/images/capilarmente-social.png",
+      "article": false
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos",
+      "title": "Medicamentos para Queda de Cabelo — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos",
+      "ogImage": "https://www.capilarmente.com.br/images/capilarmente-social.png",
+      "article": false
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas",
+      "title": "Causas da Queda de Cabelo — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas",
+      "ogImage": "https://www.capilarmente.com.br/images/capilarmente-social.png",
+      "article": false
+    },
+    {
+      "url": "https://www.capilarmente.com.br/blog",
+      "title": "Blog — Artigos e Guias sobre Queda de Cabelo — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/blog",
+      "ogImage": "https://www.capilarmente.com.br/images/capilarmente-social.png",
+      "article": false
+    },
+    {
+      "url": "https://www.capilarmente.com.br/avaliacao",
+      "title": "Avaliação capilar gratuita: roteiro educativo — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/avaliacao",
+      "ogImage": "https://www.capilarmente.com.br/images/capilarmente-social.png",
+      "article": false
+    },
+    {
+      "url": "https://www.capilarmente.com.br/autores",
+      "title": "Autoria do Capilarmente — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/autores",
+      "ogImage": "https://www.capilarmente.com.br/images/capilarmente-social.png",
+      "article": false
+    },
+    {
+      "url": "https://www.capilarmente.com.br/sobre",
+      "title": "Sobre o Capilarmente — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/sobre",
+      "ogImage": "https://www.capilarmente.com.br/images/capilarmente-social.png",
+      "article": false
+    },
+    {
+      "url": "https://www.capilarmente.com.br/editorial",
+      "title": "Política editorial e correções — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/editorial",
+      "ogImage": "https://www.capilarmente.com.br/images/capilarmente-social.png",
+      "article": false
+    },
+    {
+      "url": "https://www.capilarmente.com.br/contato",
+      "title": "Contato e correções — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/contato",
+      "ogImage": "https://www.capilarmente.com.br/images/capilarmente-social.png",
+      "article": false
+    },
+    {
+      "url": "https://www.capilarmente.com.br/privacidade",
+      "title": "Privacidade e dados de navegação — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/privacidade",
+      "ogImage": "https://www.capilarmente.com.br/images/capilarmente-social.png",
+      "article": false
+    },
+    {
+      "url": "https://www.capilarmente.com.br/blog/fibras-capilares-como-escolher",
+      "title": "Fibras capilares: como escolher cor, cobertura e preço — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/blog/fibras-capilares-como-escolher",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/blog-fibras-capilares-como-escolher.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/blog/dermaroller-em-casa",
+      "title": "Dermaroller em Casa: Como Usar com Segurança no Cabelo — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/blog/dermaroller-em-casa",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/blog-dermaroller-em-casa.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/blog/perucas-proteses-capilares",
+      "title": "Peruca ou prótese capilar: como escolher e calcular custos — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/blog/perucas-proteses-capilares",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/blog-perucas-proteses-capilares.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/tratamentos/scalp-micropigmentation",
+      "title": "Micropigmentação capilar: como funciona e quais os riscos — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/tratamentos/scalp-micropigmentation",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/tratamentos-scalp-micropigmentation.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas/cabelo-anageno-solto",
+      "title": "Síndrome do cabelo anágeno solto — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas/cabelo-anageno-solto",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/causas-cabelo-anageno-solto.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/tratamentos/transplante-capilar-turquia",
+      "title": "Transplante Capilar na Turquia: Riscos, Custos e Cuidados — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/tratamentos/transplante-capilar-turquia",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/tratamentos-transplante-capilar-turquia.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/blog/impacto-psicologico-queda-cabelo",
+      "title": "Queda de cabelo e saúde emocional — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/blog/impacto-psicologico-queda-cabelo",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/blog-impacto-psicologico-queda-cabelo.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/tratamentos/transplante-sobrancelhas",
+      "title": "Transplante de Sobrancelhas: Técnica, Resultados e Custos — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/tratamentos/transplante-sobrancelhas",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/tratamentos-transplante-sobrancelhas.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas/pseudopelade-brocq",
+      "title": "Pseudopelade de Brocq: Sintomas, Causas e Tratamento — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas/pseudopelade-brocq",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/causas-pseudopelade-brocq.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/anticoncepcional-queda-cabelo",
+      "title": "Anticoncepcional e queda de cabelo: a relação — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/anticoncepcional-queda-cabelo",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-anticoncepcional-queda-cabelo.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas/liquen-plano-pilar",
+      "title": "Líquen Plano Pilar: Causas, Diagnóstico e Tratamento — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas/liquen-plano-pilar",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/causas-liquen-plano-pilar.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/finasterida-topica",
+      "title": "Finasterida tópica: evidências e segurança — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/finasterida-topica",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-finasterida-topica.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/blog/queda-feminina-vs-masculina",
+      "title": "Queda de cabelo feminina e masculina: diferenças — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/blog/queda-feminina-vs-masculina",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/blog-queda-feminina-vs-masculina.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/tratamentos/transplante-barba",
+      "title": "Transplante de barba: resultados, riscos e orçamento — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/tratamentos/transplante-barba",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/tratamentos-transplante-barba.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/colageno-cabelo",
+      "title": "Colágeno Hidrolisado para Cabelo: O Que a Ciência Mostra — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/colageno-cabelo",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-colageno-cabelo.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas/psoriase-couro-cabeludo",
+      "title": "Psoríase no couro cabeludo e queda de cabelo — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas/psoriase-couro-cabeludo",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/causas-psoriase-couro-cabeludo.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/blog/custo-tratar-calvicie-brasil",
+      "title": "Quanto custa tratar a calvície? Preços e calculadora — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/blog/custo-tratar-calvicie-brasil",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/blog-custo-tratar-calvicie-brasil.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/tratamentos/dhi-transplante-capilar",
+      "title": "DHI capilar: técnica, resultados e custos — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/tratamentos/dhi-transplante-capilar",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/tratamentos-dhi-transplante-capilar.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/omega-3-cabelo",
+      "title": "Ômega-3 e Queda de Cabelo: O que a Evidência Mostra — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/omega-3-cabelo",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-omega-3-cabelo.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas/queda-cabelo-adolescentes",
+      "title": "Queda de cabelo em adolescentes: causas e cuidados — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas/queda-cabelo-adolescentes",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/causas-queda-cabelo-adolescentes.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/tretinoina-adjuvante-minoxidil",
+      "title": "Tretinoína e minoxidil: evidências e riscos — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/tretinoina-adjuvante-minoxidil",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-tretinoina-adjuvante-minoxidil.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas/dermatite-seborreica-queda",
+      "title": "Dermatite seborreica causa queda de cabelo? — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas/dermatite-seborreica-queda",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/causas-dermatite-seborreica-queda.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/tratamentos/exossomos-capilar",
+      "title": "Exossomos capilares: evidências e incertezas — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/tratamentos/exossomos-capilar",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/tratamentos-exossomos-capilar.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/blog/queda-cabelo-gravidez",
+      "title": "Queda de Cabelo na Gravidez e Pós-Parto: Guia Completo — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/blog/queda-cabelo-gravidez",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/blog-queda-cabelo-gravidez.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/tratamentos/microneedling-rf-capilar",
+      "title": "Radiofrequência microagulhada capilar: evidências e riscos — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/tratamentos/microneedling-rf-capilar",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/tratamentos-microneedling-rf-capilar.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/clobetasol-alopecia-areata",
+      "title": "Clobetasol para alopecia areata: usos e riscos — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/clobetasol-alopecia-areata",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-clobetasol-alopecia-areata.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas/anemia-ferritina-queda-cabelo",
+      "title": "Anemia e Ferritina Baixa: Causa Comum de Queda de Cabelo — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas/anemia-ferritina-queda-cabelo",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/causas-anemia-ferritina-queda-cabelo.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/ciproterona-queda-cabelo",
+      "title": "Ciproterona para queda de cabelo: usos e riscos — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/ciproterona-queda-cabelo",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-ciproterona-queda-cabelo.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas/queda-cabelo-menopausa",
+      "title": "Queda de cabelo na menopausa: causas e cuidados — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas/queda-cabelo-menopausa",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/causas-queda-cabelo-menopausa.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/tratamentos/prf-capilar",
+      "title": "PRF capilar funciona? Evidências, riscos e custos — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/tratamentos/prf-capilar",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/tratamentos-prf-capilar.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/blog/guia-shampoos-antiqueda",
+      "title": "Shampoo antiqueda funciona? Como comparar e escolher — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/blog/guia-shampoos-antiqueda",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/blog-guia-shampoos-antiqueda.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/tratamentos/ozonioterapia-capilar",
+      "title": "Ozonioterapia Capilar: como funciona e o que esperar — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/tratamentos/ozonioterapia-capilar",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/tratamentos-ozonioterapia-capilar.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/bicalutamida-alopecia-feminina",
+      "title": "Bicalutamida para alopecia feminina: riscos — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/bicalutamida-alopecia-feminina",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-bicalutamida-alopecia-feminina.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/blog/glossario-tricologia",
+      "title": "Glossário de tricologia e queda de cabelo — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/blog/glossario-tricologia",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/blog-glossario-tricologia.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas/queda-cabelo-feminina",
+      "title": "Queda de Cabelo Feminina: Guia Completo para Mulheres — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas/queda-cabelo-feminina",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/causas-queda-cabelo-feminina.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas/alopecia-quimioterapia",
+      "title": "Queda de cabelo na quimioterapia: cuidados — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas/alopecia-quimioterapia",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/causas-alopecia-quimioterapia.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas/tireoide-queda-cabelo",
+      "title": "Tireoide e queda de cabelo: qual a relação? — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas/tireoide-queda-cabelo",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/causas-tireoide-queda-cabelo.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/tratamentos/led-vs-laser-capilar",
+      "title": "LED ou laser capilar: diferenças e critérios — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/tratamentos/led-vs-laser-capilar",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/tratamentos-led-vs-laser-capilar.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/blog/antes-depois-tratamentos",
+      "title": "Antes e Depois: O que Esperar de Cada Tratamento Capilar — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/blog/antes-depois-tratamentos",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/blog-antes-depois-tratamentos.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/tratamentos/celulas-tronco-capilar",
+      "title": "Células-tronco capilares: evidências e limites — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/tratamentos/celulas-tronco-capilar",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/tratamentos-celulas-tronco-capilar.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/flutamida-alopecia-feminina",
+      "title": "Flutamida para Alopecia Feminina: Eficácia e Riscos — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/flutamida-alopecia-feminina",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-flutamida-alopecia-feminina.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas/sop-queda-cabelo",
+      "title": "SOP e Queda de Cabelo: Causas, Diagnóstico e Tratamentos — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas/sop-queda-cabelo",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/causas-sop-queda-cabelo.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/cafeina-topica",
+      "title": "Cafeína para queda de cabelo: o que se sabe — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/cafeina-topica",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-cafeina-topica.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/zinco-saude-capilar",
+      "title": "Zinco e Saúde Capilar: Evidências e Suplementação — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/zinco-saude-capilar",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-zinco-saude-capilar.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas/alopecia-cicatricial",
+      "title": "Alopecia Cicatricial: Tipos, Diagnóstico e Tratamento — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas/alopecia-cicatricial",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/causas-alopecia-cicatricial.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/vitamina-d-queda-cabelo",
+      "title": "Vitamina D e queda de cabelo: associação não é tratamento — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/vitamina-d-queda-cabelo",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-vitamina-d-queda-cabelo.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas/alopecia-frontal-fibrosante",
+      "title": "Alopecia frontal fibrosante: sinais e cuidados — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas/alopecia-frontal-fibrosante",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/causas-alopecia-frontal-fibrosante.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/procapil",
+      "title": "Procapil funciona? O que comparar em tônicos capilares — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/procapil",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-procapil.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas/efluvio-telogeno",
+      "title": "Eflúvio Telógeno: causas, diagnóstico e como tratar — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas/efluvio-telogeno",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/causas-efluvio-telogeno.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas/tricotilomania",
+      "title": "Tricotilomania: Causas, Diagnóstico e Tratamentos — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas/tricotilomania",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/causas-tricotilomania.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/melatonina-topica",
+      "title": "Melatonina Tópica Capilar: Evidências e Como Usar — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/melatonina-topica",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-melatonina-topica.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas/queda-cabelo-medicamentos",
+      "title": "Queda de Cabelo por Medicamentos: Causas e Manejo — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas/queda-cabelo-medicamentos",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/causas-queda-cabelo-medicamentos.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas/queda-cabelo-pos-covid",
+      "title": "Queda de cabelo após Covid: duração e quando avaliar — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas/queda-cabelo-pos-covid",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/causas-queda-cabelo-pos-covid.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/tratamentos/intradermoterapia-capilar",
+      "title": "Intradermoterapia capilar: evidências e riscos — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/tratamentos/intradermoterapia-capilar",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/tratamentos-intradermoterapia-capilar.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/tratamentos/tricopigmentacao",
+      "title": "Tricopigmentação: custo, duração e o que perguntar — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/tratamentos/tricopigmentacao",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/tratamentos-tricopigmentacao.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/blog/como-escolher-tricologista",
+      "title": "Como escolher um tricologista ou dermatologista — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/blog/como-escolher-tricologista",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/blog-como-escolher-tricologista.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/tratamentos/carboxiterapia-capilar",
+      "title": "Carboxiterapia capilar: evidências e riscos — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/tratamentos/carboxiterapia-capilar",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/tratamentos-carboxiterapia-capilar.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/tratamentos/mesoterapia-capilar",
+      "title": "Mesoterapia Capilar: como funciona e o que esperar — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/tratamentos/mesoterapia-capilar",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/tratamentos-mesoterapia-capilar.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/saw-palmetto",
+      "title": "Saw Palmetto para Queda de Cabelo: Evidências e Uso — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/saw-palmetto",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-saw-palmetto.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas/alopecia-areata",
+      "title": "Alopecia Areata: Guia Completo sobre Causas e Tratamento — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas/alopecia-areata",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/causas-alopecia-areata.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas/alopecia-de-tracao",
+      "title": "Alopecia de Tração: Causas, Diagnóstico e Tratamento — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas/alopecia-de-tracao",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/causas-alopecia-de-tracao.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/biotina-cabelo",
+      "title": "Biotina para cabelo: funciona e quando faz sentido? — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/biotina-cabelo",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-biotina-cabelo.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/suplementos-capilares",
+      "title": "Suplementos capilares funcionam? Evidências — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/suplementos-capilares",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-suplementos-capilares.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/latanoprosta-cilios-sobrancelhas",
+      "title": "Latanoprosta para cílios: riscos e diferenças — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/latanoprosta-cilios-sobrancelhas",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-latanoprosta-cilios-sobrancelhas.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/minoxidil-5-vs-2",
+      "title": "Minoxidil 5% ou 2%: diferenças e cuidados — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/minoxidil-5-vs-2",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-minoxidil-5-vs-2.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/alfaestradiol",
+      "title": "Alfaestradiol para queda de cabelo: evidências — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/alfaestradiol",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-alfaestradiol.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/blog/escala-norwood",
+      "title": "Escala Norwood: Identifique seu Grau de Calvície — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/blog/escala-norwood",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/blog-escala-norwood.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/blog/mitos-queda-cabelo",
+      "title": "10 Mitos sobre Queda de Cabelo Desmentidos pela Ciência — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/blog/mitos-queda-cabelo",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/blog-mitos-queda-cabelo.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/blog/rotina-capilar-masculina",
+      "title": "Rotina capilar masculina: cuidados e limites — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/blog/rotina-capilar-masculina",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/blog-rotina-capilar-masculina.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas/alopecia-androgenetica",
+      "title": "Alopecia Androgenética: Causas, Diagnóstico e Tratamento — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas/alopecia-androgenetica",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/causas-alopecia-androgenetica.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas/estresse-queda-cabelo",
+      "title": "Estresse e Queda de Cabelo: Eflúvio Telógeno Explicado — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas/estresse-queda-cabelo",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/causas-estresse-queda-cabelo.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas/nutricao-capilar",
+      "title": "Nutrição e queda de cabelo: o que investigar — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas/nutricao-capilar",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/causas-nutricao-capilar.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/causas/queda-hormonal",
+      "title": "Queda de Cabelo Hormonal: Tireoide, Menopausa e Mais — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/causas/queda-hormonal",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/causas-queda-hormonal.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/cetoconazol-shampoo",
+      "title": "Cetoconazol Shampoo: Funciona para Queda de Cabelo? — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/cetoconazol-shampoo",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-cetoconazol-shampoo.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/dutasterida",
+      "title": "Dutasterida para Queda de Cabelo: O que Diz a Ciência — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/dutasterida",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-dutasterida.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/espironolactona",
+      "title": "Espironolactona: Tratamento para Alopecia Feminina — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/espironolactona",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-espironolactona.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/finasterida",
+      "title": "Finasterida: Guia Completo para Tratamento da Calvície — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/finasterida",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-finasterida.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/minoxidil-oral",
+      "title": "Minoxidil Oral: Nova Fronteira no Tratamento Capilar — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/minoxidil-oral",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-minoxidil-oral.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/tratamentos/laser-terapia",
+      "title": "Laser capilar funciona? Evidências e como comparar — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/tratamentos/laser-terapia",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/tratamentos-laser-terapia.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/tratamentos/microagulhamento",
+      "title": "Microagulhamento para Queda de Cabelo: Como Funciona — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/tratamentos/microagulhamento",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/tratamentos-microagulhamento.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/tratamentos/prp-capilar",
+      "title": "PRP Capilar: Plasma Rico em Plaquetas para Cabelo — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/tratamentos/prp-capilar",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/tratamentos-prp-capilar.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/tratamentos/transplante-capilar",
+      "title": "Transplante Capilar no Brasil: Guia Completo FUE e FUT — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/tratamentos/transplante-capilar",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/tratamentos-transplante-capilar.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/medicamentos/minoxidil",
+      "title": "Minoxidil para queda de cabelo: usos e cuidados — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/medicamentos/minoxidil",
+      "ogImage": "https://www.capilarmente.com.br/images/articles/medicamentos-minoxidil.png",
+      "article": true
+    },
+    {
+      "url": "https://www.capilarmente.com.br/autores/equipe-editorial",
+      "title": "Redação Capilarmente — Capilarmente",
+      "h1": 1,
+      "canonical": "https://www.capilarmente.com.br/autores/equipe-editorial",
+      "ogImage": "https://www.capilarmente.com.br/images/capilarmente-social.png",
+      "article": false
+    }
+  ]
+}

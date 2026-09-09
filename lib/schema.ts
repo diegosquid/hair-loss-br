@@ -1,7 +1,7 @@
 import { Article, Author } from "@/types";
 
-export const SITE_URL = "https://www.capilarmente.com.br";
-export const SITE_NAME = "Capilarmente";
+import { SITE_URL, SITE_NAME } from "./site";
+export { SITE_URL, SITE_NAME } from "./site";
 
 type JsonLd = Record<string, unknown>;
 
@@ -14,7 +14,7 @@ export function organizationSchema(): JsonLd {
     url: SITE_URL,
     logo: `${SITE_URL}/icon.svg`,
     description:
-      "Guia brasileiro de tratamentos para queda de cabelo baseado em evidências científicas, revisado por dermatologistas.",
+      "Publicação independente sobre queda de cabelo, cuidados e custos no Brasil.",
     sameAs: [],
   };
 }
@@ -34,15 +34,15 @@ export function websiteSchema(): JsonLd {
 export function personSchema(author: Author): JsonLd {
   return {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": `${SITE_URL}/autores/${author.slug}#person`,
+    "@type": author.kind ?? "Person",
+    "@id": `${SITE_URL}/autores/${author.slug}#author`,
     name: author.name,
     url: `${SITE_URL}/autores/${author.slug}`,
     jobTitle: author.title,
     description: author.bio,
     knowsAbout: author.specialties,
     memberOf: author.affiliations.map((name) => ({ "@type": "Organization", name })),
-    identifier: author.credentials,
+    ...(author.credentials ? { identifier: author.credentials } : {}),
   };
 }
 
@@ -61,14 +61,10 @@ export function breadcrumbSchema(items: { name: string; url: string }[]): JsonLd
 
 export function articleSchema(article: Article): JsonLd {
   const url = `${SITE_URL}/${article.categorySlug}/${article.slug}`;
-  // Multi-type: BlogPosting (for /blog/*) or Article (for everything else),
-  // combined with MedicalWebPage to retain medical-content semantics for E-E-A-T.
-  // The Article-family @type unlocks Google's Article rich result; MedicalWebPage
-  // adds reviewedBy/lastReviewed credibility signals for YMYL content.
   const primaryType = article.categorySlug === "blog" ? "BlogPosting" : "Article";
   return {
     "@context": "https://schema.org",
-    "@type": [primaryType, "MedicalWebPage"],
+    "@type": primaryType,
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
     headline: article.title,
     description: article.description,
@@ -76,21 +72,13 @@ export function articleSchema(article: Article): JsonLd {
     inLanguage: "pt-BR",
     datePublished: article.publishedAt,
     dateModified: article.updatedAt ?? article.publishedAt,
-    lastReviewed: article.updatedAt ?? article.publishedAt,
+    image: [`${SITE_URL}${article.image}`],
     author: {
-      "@type": "Person",
-      "@id": `${SITE_URL}/autores/${article.author.slug}#person`,
+      "@type": article.author.kind ?? "Person",
+      "@id": `${SITE_URL}/autores/${article.author.slug}#author`,
       name: article.author.name,
       url: `${SITE_URL}/autores/${article.author.slug}`,
     },
-    reviewedBy: article.medicalReviewer
-      ? {
-          "@type": "Person",
-          "@id": `${SITE_URL}/autores/${article.medicalReviewer.slug}#person`,
-          name: article.medicalReviewer.name,
-          url: `${SITE_URL}/autores/${article.medicalReviewer.slug}`,
-        }
-      : undefined,
     publisher: {
       "@type": "Organization",
       "@id": `${SITE_URL}/#organization`,
@@ -136,6 +124,6 @@ export function faqSchema(faqs: { question: string; answer: string }[]): JsonLd 
 
 export function jsonLdScript(schema: JsonLd | JsonLd[]) {
   return {
-    __html: JSON.stringify(schema),
+    __html: JSON.stringify(schema).replace(/</g, "\\u003c"),
   };
 }
