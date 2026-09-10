@@ -32,7 +32,7 @@
 .topicNav a+a { border-left:1px solid var(--line); }
 .topicNav a:hover { background:#f0f2e9; }
 .topicNav a:first-child { padding-left:0; }
-.topicNav a>span { color:#7d826f; font-size:10px; }
+.topicNav a>span { color:#5c6554; font-size:10px; }
 .topicNav svg { margin-left:auto; width:17px; }
 .explore { padding-block:84px 88px; scroll-margin-top:95px; }
 .sectionHead { display:flex; justify-content:space-between; gap:50px; align-items:flex-end; margin-bottom:35px; }
@@ -50,7 +50,7 @@
 .pathCard:nth-child(2) { background:#f8f0e6; border-color:#ede3d6; }
 .pathCard:nth-child(3) { background:#efece5; border-color:#e6e1d8; }
 .pathCard:hover { background:#e5ebdd; }
-.pathNumber { font-size:10px; color:#727762; letter-spacing:.12em; margin-bottom:25px; }
+.pathNumber { font-size:10px; color:#5c6554; letter-spacing:.12em; margin-bottom:25px; }
 .pathCard h3 { font-size:23px; line-height:1.25; font-weight:400; letter-spacing:-.025em; max-width:290px; }
 .pathCard p { font-size:13px; line-height:1.65; color:var(--muted); margin:13px 0 22px; max-width:295px; }
 .pathAction { display:flex; justify-content:space-between; align-items:center; font-size:12px; margin-top:auto; padding-top:14px; border-top:1px solid #ccd1c2; }
@@ -69,8 +69,8 @@
 .notebookTop>span:last-child { font-size:18px; line-height:1; }
 .notebook>p { font-family:var(--font-display),Georgia,serif; font-size:33px; line-height:1.2; margin:23px 0 25px; }
 .notebook li { display:flex; gap:12px; font-size:12px; border-bottom:1px solid #d8d7c7; padding:13px 0; }
-.notebook li span { color:#7c7f69; font-size:10px; }
-.notebookFooter { font-size:10px; color:#727563; margin-top:25px; }
+.notebook li span { color:#5c6554; font-size:10px; }
+.notebookFooter { font-size:10px; color:#5c6554; margin-top:25px; }
 .shopping { display:grid; grid-template-columns:1fr 1.05fr; gap:80px; align-items:center; padding-block:100px; scroll-margin-top:75px; }
 .shoppingVisual img { width:100%; height:485px; object-fit:cover; border-radius:3px; }
 .shoppingVisual figcaption { margin-top:10px; font-size:10px; color:var(--muted); }

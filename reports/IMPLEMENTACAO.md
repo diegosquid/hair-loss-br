@@ -2,7 +2,7 @@
 
 Data: 9/9/2026. Branch: `codex/seo-recovery-2026-09-09`. Base: `7591f50`.
 
-## Resultado local validado
+## Resultado publicado e validado
 
 - 95 páginas no sitemap, incluindo 83 artigos. As seis páginas antigas de autores são substituídas por uma redação editorial e redirecionamentos permanentes. Novo guia de fibras capilares e página de contato preparada.
 - Um H1 por página. Títulos de busca ajustados; nenhum título excedeu 75 caracteres no HTML validado. Canonicals, links internos, âncoras e imagens validados em todas as páginas do sitemap.
@@ -23,13 +23,13 @@ Data: 9/9/2026. Branch: `codex/seo-recovery-2026-09-09`. Base: `7591f50`.
 - Search Console do domínio vinculado com sucesso ao novo fluxo em 9/9/2026.
 - Tag só carrega após aceitar métricas e somente no domínio público. Recusa, DNT/GPC e previews bloqueiam a medição. Eventos permitidos: `quiz_start`, `quiz_step`, `quiz_complete`, `calculator_use`, `affiliate_click`. Nenhuma resposta, sintoma ou valor digitado faz parte do payload.
 - URLs limitadas a páginas conhecidas, sem query/hash; origem de referência limitada ao domínio. Publicidade e Google Signals desativados no código. Cookies configurados para até 180 dias sem renovação a cada visita.
-- Registro de eventos no domínio real: aguardando publicação e conferência.
+- Teste público em 10/9: tag ausente antes do consentimento e presente após aceitar. Roteiro completo e calculadora executados. Conferência de recebimento no relatório GA4 em andamento; ainda não declaramos coleta confirmada.
 
 ## Domínio e indexação
 
-- Domínio sem www configurado na Vercel com destino www e status permanente 308 (API confirmou a gravação).
-- Chave pública e comando IndexNow preparados. O envio valida primeiro a chave publicada, HTTP e canonical. Ainda não foi enviado antes da conferência pública.
-- Sitemap canônico local: 95 URLs, sem perfis profissionais antigos. Google/Bing serão atualizados após publicação.
+- Domínio sem www com destino www e status permanente 308, conferido via HTTP público na raiz e em página interna. Seis redirecionamentos de autoria também passaram.
+- IndexNow: lote único de 95 URLs enviado em 10/9 após crawl público, chave/HTTP/canonical conferidos. HTTP 202: recebido para processamento/verificação de chave, não comprova indexação. Evidência em `indexnow/`.
+- Sitemap canônico público: 95 URLs. Search Console confirmou reenvio em 10/9, ainda exibindo a leitura anterior de 98 URLs. Bing já processou o sitemap HTTPS com www: Success, 95 URLs. Registro HTTP antigo permanece no histórico; seu endpoint redireciona para o sitemap canônico. Google confirmou solicitação de nova indexação da página de custos.
 - Linha de base da auditoria: Google 20 cliques / 2,69 mil impressões / CTR 0,7% / posição 11,1; Bing 266 cliques / 16,2 mil impressões / CTR 1,64% / posição 5,3, nas janelas registradas no relatório original.
 
 ## Testes de navegador
@@ -41,8 +41,8 @@ Chrome, build estático, desktop e viewport de 390 × 844. Página inicial e men
 1. O usuário autorizou `contato@capilarmente.com.br` como contato editorial. Endereço incluído; o encaminhamento no Cloudflare foi explicitamente deixado para depois. O recebimento de e-mail ainda não foi validado.
 2. O usuário pediu para deixar afiliados preparados e enviará os links posteriormente. O componente, aviso e medição estão prontos; `config/affiliate-offers.json` permanece vazio. Ainda não há receita de afiliados implementada.
 3. Revisão médica independente exige um profissional real, autorizado, e conferência documentada dos textos. Não foi simulada.
-4. Core Web Vitals de campo: dados insuficientes na auditoria. A skill web-perf exige Chrome DevTools MCP para seu trace; esse MCP não está disponível. Validação funcional/visual não substitui medição de desempenho.
-5. Publicação, crawl público, IndexNow e atualização de sitemaps: em execução. Indexação e evolução de ranking dependem dos buscadores e devem ser comparadas à linha de base, sem garantia de resultado.
+4. Core Web Vitals de campo: dados insuficientes. Medição de laboratório pelo site PageSpeed Insights em 10/9: mobile 93 desempenho, 97 acessibilidade, 100 boas práticas, 100 SEO; LCP 2,9 s, FCP 0,9 s, TBT 150 ms, CLS 0. Ajustes de contraste e imagens responsivas aplicados após esse resultado. O trace específico da skill web-perf não foi executado porque não há Chrome DevTools MCP; a medição pública de laboratório está documentada separadamente em `HOME-2026-09-10.md`.
+5. Indexação e evolução de ranking dependem dos buscadores e devem ser comparadas à linha de base. Publicação, crawl público e envio de sitemaps concluídos; recebimento de eventos no painel GA4 ainda em conferência.
 
 ## Próxima leitura dos indicadores
 
@@ -51,3 +51,7 @@ Após os buscadores processarem as alterações, comparar custo, PRF, barba, lat
 ## Identidade de publicação
 
 O primeiro preview foi bloqueado pela Vercel por não associar o e-mail corporativo do autor à conta GitHub. A API GitHub confirmou a conta `diegosquid` (ID 7774898) e que o commit antigo não tinha autor associado. O usuário autorizou o endereço noreply dessa conta somente neste projeto. A configuração Git local foi corrigida para `7774898+diegosquid@users.noreply.github.com`; nenhuma permissão ou associação de conta foi alterada.
+
+## Publicação em 10/9/2026
+
+Commits `af41dd7` (SEO/editorial/GA4) e `40c314a` (home) integrados via fast-forward ao main e publicados. Deployment `dpl_FEKgjRuNbwVunPVx6Ee6u57554EZ` Ready, associado a www/apex. Crawl público: 95 páginas, 87 imagens com SHA-256 igual ao build, 8 redirecionamentos, zero erros. Home com fotografia editorial, navegação por intenção e área de comparação. Evidências em `public-validation.json` e `HOME-2026-09-10.md`.

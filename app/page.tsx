@@ -37,7 +37,7 @@ export default function Home() {
       </div>
       <figure className={styles.heroVisual}>
         <picture>
-          <source srcSet="/images/home/cuidado-capilar-640.webp 640w, /images/home/cuidado-capilar-1120.webp 1120w" sizes="(max-width: 760px) calc(100vw - 40px), 46vw" type="image/webp" />
+          <source srcSet="/images/home/cuidado-capilar-640.webp 640w, /images/home/cuidado-capilar-800.webp 800w, /images/home/cuidado-capilar-1120.webp 1120w" sizes="(max-width: 760px) calc(100vw - 40px), 46vw" type="image/webp" />
           <img src="/images/home/cuidado-capilar-1120.webp" width="1120" height="1400" fetchPriority="high" alt="Imagem ilustrativa de uma mulher tocando os cabelos cacheados sob luz natural." />
         </picture>
         <div className={styles.photoLabel}><span>CAPILARMENTE</span><p>Cuidado começa<br />com um novo olhar.</p></div>
@@ -65,7 +65,7 @@ export default function Home() {
     </section>
 
     <section id="comprar-com-criterio" className={`${styles.wrap} ${styles.shopping}`} aria-labelledby="shopping-title">
-      <figure className={styles.shoppingVisual}><img src="/images/home/cuidados-e-escolhas-960.webp" width="960" height="640" loading="lazy" alt="Composição ilustrativa com frasco sem marca, pente e tecido sobre uma bancada." /><figcaption>Objetos ilustrativos criados com IA · Sem indicação de marca</figcaption></figure>
+      <figure className={styles.shoppingVisual}><img src="/images/home/cuidados-e-escolhas-960.webp" srcSet="/images/home/cuidados-e-escolhas-640.webp 640w, /images/home/cuidados-e-escolhas-960.webp 960w" sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 1100px) 43vw, 550px" width="960" height="640" loading="lazy" alt="Composição ilustrativa com frasco sem marca, pente e tecido sobre uma bancada." /><figcaption>Objetos ilustrativos criados com IA · Sem indicação de marca</figcaption></figure>
       <div><p className={styles.eyebrow}>Antes de colocar no carrinho</p><h2 id="shopping-title">Menos impulso.<br /><em>Mais critério.</em></h2><p className={styles.shoppingIntro}>O que observar no rótulo, na manutenção e nas promessas. Guias para comparar possibilidades antes de gastar.</p><div className={styles.shoppingLinks}>{[
         ["Shampoos antiqueda", "O que o produto faz — e o que esperar dele.", "/blog/guia-shampoos-antiqueda"],
         ["Fibras capilares", "Aplicação, acabamento e cuidados de uso.", "/blog/fibras-capilares-como-escolher"],
