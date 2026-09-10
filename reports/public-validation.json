@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-09-10T12:32:20.947Z",
+  "checkedAt": "2026-09-10T12:40:44.797Z",
   "pages": 95,
-  "assets": 87,
+  "assets": 89,
   "errors": [],
   "rows": [
     {
@@ -587,9 +587,24 @@
       "sha256": "9516d013f37daa3de3efe30da1d0c8960c3176fbd1cf4fe833cef80457ce93a4"
     },
     {
+      "path": "/images/home/cuidado-capilar-800.webp",
+      "bytes": 60924,
+      "sha256": "c56111ca027be564bc13747a34621f0fab72f0c9d7a52631da3fbdd45a85103f"
+    },
+    {
+      "path": "/images/home/cuidados-e-escolhas-640.webp",
+      "bytes": 28784,
+      "sha256": "866eb1d2144fb9aad24abeb2f6b2adee7436a0d72576d1c098de16c2c8dead29"
+    },
+    {
       "path": "/images/home/cuidados-e-escolhas-960.webp",
       "bytes": 64584,
       "sha256": "cc03ee045862eeb9966c6417deba4e128db1942dbfc6f55be6a9efaff5275b38"
+    },
+    {
+      "path": "/images/capilarmente-social.png",
+      "bytes": 37100,
+      "sha256": "681a202d7fe71f4e3af3d6bc713887e2271f1d45ba056169d6cceba99d034f77"
     },
     {
       "path": "/images/articles/tratamentos-prf-capilar.png",
@@ -607,11 +622,6 @@
       "sha256": "1c7695afe33ba433c0ea6f51ce36720a733eb5ae939f1ba709cb31dbce3ef318"
     },
     {
-      "path": "/images/capilarmente-social.png",
-      "bytes": 37100,
-      "sha256": "681a202d7fe71f4e3af3d6bc713887e2271f1d45ba056169d6cceba99d034f77"
-    },
-    {
       "path": "/images/articles/blog-fibras-capilares-como-escolher.png",
       "bytes": 44793,
       "sha256": "741619d7b29b84fad9606d7ad3384835e5501e023694b3e943365c3a3c3b18d7"
@@ -622,24 +632,24 @@
       "sha256": "35353ce485e02b1a02802e0171e44d8cfe9736c6a768770b45ff1245d2eeea5f"
     },
     {
-      "path": "/images/articles/tratamentos-scalp-micropigmentation.png",
-      "bytes": 44332,
-      "sha256": "261b79280933bd1994905fbcc2b01dc375252bbee61541bf9ef480c5ed79c725"
-    },
-    {
       "path": "/images/articles/blog-perucas-proteses-capilares.png",
       "bytes": 45651,
       "sha256": "9d025ebfded371f0b9ef950c28d2b0adeb17f70088e0464ac62bd395ccc5ae12"
     },
     {
-      "path": "/images/articles/tratamentos-transplante-capilar-turquia.png",
-      "bytes": 47648,
-      "sha256": "f754338e582db20710982b9bbbf82702dd97260b6dcb0e647be9bfe5ef5a665c"
+      "path": "/images/articles/tratamentos-scalp-micropigmentation.png",
+      "bytes": 44332,
+      "sha256": "261b79280933bd1994905fbcc2b01dc375252bbee61541bf9ef480c5ed79c725"
     },
     {
       "path": "/images/articles/causas-cabelo-anageno-solto.png",
       "bytes": 36162,
       "sha256": "bec5d16974f1baba03d677905292287164d4414a309bd4a0c6b533114e5fe1f2"
+    },
+    {
+      "path": "/images/articles/tratamentos-transplante-capilar-turquia.png",
+      "bytes": 47648,
+      "sha256": "f754338e582db20710982b9bbbf82702dd97260b6dcb0e647be9bfe5ef5a665c"
     },
     {
       "path": "/images/articles/blog-impacto-psicologico-queda-cabelo.png",
@@ -652,19 +662,14 @@
       "sha256": "401f502155b5ee7b3bdb3f4137b60ff682765a0fbbc4d8fe4618dbea76a109cd"
     },
     {
-      "path": "/images/articles/medicamentos-anticoncepcional-queda-cabelo.png",
-      "bytes": 39528,
-      "sha256": "3dd35f9034fc88ba394d94a4151ac713e793c9c1d6ec364a7b70060852380619"
-    },
-    {
       "path": "/images/articles/causas-pseudopelade-brocq.png",
       "bytes": 42819,
       "sha256": "bf37f9da283239833d9003714c99f8bcaee73268092185adb1c11880a7c702b4"
     },
     {
-      "path": "/images/articles/causas-liquen-plano-pilar.png",
-      "bytes": 41888,
-      "sha256": "861353bc3d20b7977a76eb3ee22af1de26342d9e37cdea2ea5ee436c0ef54843"
+      "path": "/images/articles/medicamentos-anticoncepcional-queda-cabelo.png",
+      "bytes": 39528,
+      "sha256": "3dd35f9034fc88ba394d94a4151ac713e793c9c1d6ec364a7b70060852380619"
     },
     {
       "path": "/images/articles/medicamentos-finasterida-topica.png",
@@ -672,19 +677,14 @@
       "sha256": "01b71f55e82fe8efc933b2c6c41d914969008e37627418d6fd4a67ecf9dfdf02"
     },
     {
+      "path": "/images/articles/causas-liquen-plano-pilar.png",
+      "bytes": 41888,
+      "sha256": "861353bc3d20b7977a76eb3ee22af1de26342d9e37cdea2ea5ee436c0ef54843"
+    },
+    {
       "path": "/images/articles/blog-queda-feminina-vs-masculina.png",
       "bytes": 40355,
       "sha256": "e5d3331613687edc12679fad1435a227bed91acd37b4a06b93aac6d686aa51c5"
-    },
-    {
-      "path": "/images/articles/medicamentos-colageno-cabelo.png",
-      "bytes": 44991,
-      "sha256": "538b9eef54646c35424bdd9bb27158ae9f23e0fdf7c34c2030501ad33caced91"
-    },
-    {
-      "path": "/images/articles/causas-psoriase-couro-cabeludo.png",
-      "bytes": 39574,
-      "sha256": "b4847d68b556895247d78fbbb6962966d86b82328991039906039e18fe587603"
     },
     {
       "path": "/images/articles/blog-custo-tratar-calvicie-brasil.png",
@@ -697,19 +697,19 @@
       "sha256": "eb08908dd5ec72331598a5923c28fb032c94e75c8ecdaa958b925396b305065d"
     },
     {
+      "path": "/images/articles/causas-psoriase-couro-cabeludo.png",
+      "bytes": 39574,
+      "sha256": "b4847d68b556895247d78fbbb6962966d86b82328991039906039e18fe587603"
+    },
+    {
+      "path": "/images/articles/medicamentos-colageno-cabelo.png",
+      "bytes": 44991,
+      "sha256": "538b9eef54646c35424bdd9bb27158ae9f23e0fdf7c34c2030501ad33caced91"
+    },
+    {
       "path": "/images/articles/medicamentos-omega-3-cabelo.png",
       "bytes": 44003,
       "sha256": "cfb547250372622ac18099d2ec763a98c27f8ec8f39790929cde478c95cf1f43"
-    },
-    {
-      "path": "/images/articles/medicamentos-tretinoina-adjuvante-minoxidil.png",
-      "bytes": 37893,
-      "sha256": "d1b1046d89ae7b120714c8b87f5dba44c96c2729d9f8ccc5bed0618afb076c82"
-    },
-    {
-      "path": "/images/articles/causas-dermatite-seborreica-queda.png",
-      "bytes": 38821,
-      "sha256": "c0778d8b6cabea60a7baaf959d63de12cb720cc96b877dd831229741321ee36d"
     },
     {
       "path": "/images/articles/causas-queda-cabelo-adolescentes.png",
@@ -717,14 +717,24 @@
       "sha256": "8e339c0534103daa43c199702533113726ced95484a898f5a4e5912aff68c1ea"
     },
     {
-      "path": "/images/articles/tratamentos-exossomos-capilar.png",
-      "bytes": 39696,
-      "sha256": "702cba9dbb702007a80a370fc392b2319a0077fa3a5d841ec3fea3bc4bb7c591"
+      "path": "/images/articles/causas-dermatite-seborreica-queda.png",
+      "bytes": 38821,
+      "sha256": "c0778d8b6cabea60a7baaf959d63de12cb720cc96b877dd831229741321ee36d"
     },
     {
       "path": "/images/articles/blog-queda-cabelo-gravidez.png",
       "bytes": 43281,
       "sha256": "fde190195e32239ad35b01f81a54bb4d1eca252cb3485288a740c33c0b65452b"
+    },
+    {
+      "path": "/images/articles/tratamentos-exossomos-capilar.png",
+      "bytes": 39696,
+      "sha256": "702cba9dbb702007a80a370fc392b2319a0077fa3a5d841ec3fea3bc4bb7c591"
+    },
+    {
+      "path": "/images/articles/medicamentos-tretinoina-adjuvante-minoxidil.png",
+      "bytes": 37893,
+      "sha256": "d1b1046d89ae7b120714c8b87f5dba44c96c2729d9f8ccc5bed0618afb076c82"
     },
     {
       "path": "/images/articles/tratamentos-microneedling-rf-capilar.png",
@@ -737,24 +747,14 @@
       "sha256": "fed547a36515bc6e078b0190bf120fadc2c13ecee00045f8007d9134180ee0ec"
     },
     {
-      "path": "/images/articles/causas-anemia-ferritina-queda-cabelo.png",
-      "bytes": 43657,
-      "sha256": "11aea9c92d9cd68ec8271ff979a13bfa8b89fc49c35b7880f3de706279f0da53"
-    },
-    {
       "path": "/images/articles/medicamentos-ciproterona-queda-cabelo.png",
       "bytes": 39586,
       "sha256": "dc6e47e682d52800aa92ebcd6f8becf144f0c1a14510f6effacbeab732ca9fce"
     },
     {
-      "path": "/images/articles/blog-guia-shampoos-antiqueda.png",
-      "bytes": 41270,
-      "sha256": "31aa1c7faf2111bd36e5df972e989523165b90b0b898563a957593e03a361edd"
-    },
-    {
-      "path": "/images/articles/tratamentos-ozonioterapia-capilar.png",
-      "bytes": 41491,
-      "sha256": "544698d4e5b39d4ec8f1d62a2504aa32dacf8ff5def08baa47557e5b51d23476"
+      "path": "/images/articles/causas-anemia-ferritina-queda-cabelo.png",
+      "bytes": 43657,
+      "sha256": "11aea9c92d9cd68ec8271ff979a13bfa8b89fc49c35b7880f3de706279f0da53"
     },
     {
       "path": "/images/articles/causas-queda-cabelo-menopausa.png",
@@ -762,14 +762,14 @@
       "sha256": "8283054e6fd15b14b9c61a2c5d2d88e234cac064ff7e52bcb02f6cbbd16d280b"
     },
     {
+      "path": "/images/articles/blog-guia-shampoos-antiqueda.png",
+      "bytes": 41270,
+      "sha256": "31aa1c7faf2111bd36e5df972e989523165b90b0b898563a957593e03a361edd"
+    },
+    {
       "path": "/images/articles/medicamentos-bicalutamida-alopecia-feminina.png",
       "bytes": 38865,
       "sha256": "213b8921bdc26901e32ecece3445450e455043984fda1867f28a76c0609856de"
-    },
-    {
-      "path": "/images/articles/blog-glossario-tricologia.png",
-      "bytes": 38135,
-      "sha256": "6f8208584c0396849d1beab9b4d6f56a6a720d32fd1ce17e210c21f74feb2a6f"
     },
     {
       "path": "/images/articles/causas-queda-cabelo-feminina.png",
@@ -777,14 +777,19 @@
       "sha256": "e6b7c56c368760043693d4d951a218fb7febf474583724f710a24cdbc0165d4a"
     },
     {
+      "path": "/images/articles/tratamentos-ozonioterapia-capilar.png",
+      "bytes": 41491,
+      "sha256": "544698d4e5b39d4ec8f1d62a2504aa32dacf8ff5def08baa47557e5b51d23476"
+    },
+    {
       "path": "/images/articles/causas-alopecia-quimioterapia.png",
       "bytes": 38894,
       "sha256": "a8f9be52b8762985d5d408057518bafb58f5483a93b26026b56545c0fbec7258"
     },
     {
-      "path": "/images/articles/tratamentos-led-vs-laser-capilar.png",
-      "bytes": 37615,
-      "sha256": "802e81e4ec714ff6a2841dc2cec946bf266ca685dce7b1eac5bba0cec7833888"
+      "path": "/images/articles/blog-glossario-tricologia.png",
+      "bytes": 38135,
+      "sha256": "6f8208584c0396849d1beab9b4d6f56a6a720d32fd1ce17e210c21f74feb2a6f"
     },
     {
       "path": "/images/articles/causas-tireoide-queda-cabelo.png",
@@ -792,14 +797,14 @@
       "sha256": "a005ad6cd87dc15cd251a62fb729860b3285cefe1add7cbd62e8d19e92b03b1f"
     },
     {
+      "path": "/images/articles/tratamentos-led-vs-laser-capilar.png",
+      "bytes": 37615,
+      "sha256": "802e81e4ec714ff6a2841dc2cec946bf266ca685dce7b1eac5bba0cec7833888"
+    },
+    {
       "path": "/images/articles/blog-antes-depois-tratamentos.png",
       "bytes": 43430,
       "sha256": "0461cb85c3f17567121a2035ee2e130bcc437d2b7425e7a024baa6c5b37ef541"
-    },
-    {
-      "path": "/images/articles/tratamentos-celulas-tronco-capilar.png",
-      "bytes": 39536,
-      "sha256": "a057814abb6cadc89b514d29a293ade53175d5a9c3a354ec7c43999001e42f2f"
     },
     {
       "path": "/images/articles/medicamentos-flutamida-alopecia-feminina.png",
@@ -807,24 +812,24 @@
       "sha256": "3ebe4d43b4a15e9c8881b793e63274beaeb5a9b91058d874e769c4c0ea8d8be8"
     },
     {
-      "path": "/images/articles/causas-sop-queda-cabelo.png",
-      "bytes": 44497,
-      "sha256": "606f2566e5361c9890c0883a3e788a24f4a64f61e2bd5250a473d76fa711b8b1"
-    },
-    {
       "path": "/images/articles/medicamentos-cafeina-topica.png",
       "bytes": 38860,
       "sha256": "84438c37c0243fd9b7e486aed28fd12366f88c02d5a08854aa2ebc392b86e580"
     },
     {
-      "path": "/images/articles/medicamentos-zinco-saude-capilar.png",
-      "bytes": 42030,
-      "sha256": "6820842c760c8d5e45ea79687ff2f7c7c8c435681c442e9307e96c6bbc078e3e"
-    },
-    {
       "path": "/images/articles/causas-alopecia-cicatricial.png",
       "bytes": 42359,
       "sha256": "0cf02e9aa8decfd789df510e8a1fd3bad543ad0210e30d861aa473b8a3f55141"
+    },
+    {
+      "path": "/images/articles/causas-sop-queda-cabelo.png",
+      "bytes": 44497,
+      "sha256": "606f2566e5361c9890c0883a3e788a24f4a64f61e2bd5250a473d76fa711b8b1"
+    },
+    {
+      "path": "/images/articles/tratamentos-celulas-tronco-capilar.png",
+      "bytes": 39536,
+      "sha256": "a057814abb6cadc89b514d29a293ade53175d5a9c3a354ec7c43999001e42f2f"
     },
     {
       "path": "/images/articles/medicamentos-vitamina-d-queda-cabelo.png",
@@ -842,14 +847,9 @@
       "sha256": "565b1249ed20f6825b1564206ea2daa74946d7a3da780369b36c0ea6e8b2fe21"
     },
     {
-      "path": "/images/articles/causas-efluvio-telogeno.png",
-      "bytes": 40458,
-      "sha256": "3058bab450ab1801caf5acf69661fef16b77c76dea195a5efcd800a50bfc4cca"
-    },
-    {
-      "path": "/images/articles/causas-tricotilomania.png",
-      "bytes": 40698,
-      "sha256": "f09a4befbb2a02c7ffc9efa130529f92ad939a7f1898718e056797e4aaca6509"
+      "path": "/images/articles/medicamentos-zinco-saude-capilar.png",
+      "bytes": 42030,
+      "sha256": "6820842c760c8d5e45ea79687ff2f7c7c8c435681c442e9307e96c6bbc078e3e"
     },
     {
       "path": "/images/articles/medicamentos-melatonina-topica.png",
@@ -857,9 +857,14 @@
       "sha256": "e23857195020acdb0c9790508fc9cde63fae5dd043d159635b246668e4166f9a"
     },
     {
-      "path": "/images/articles/causas-queda-cabelo-pos-covid.png",
-      "bytes": 42054,
-      "sha256": "25866459c8298fe317c5b426acbf9d7ae8d61a2009e2deca6bb32ccb3d4fadf9"
+      "path": "/images/articles/causas-tricotilomania.png",
+      "bytes": 40698,
+      "sha256": "f09a4befbb2a02c7ffc9efa130529f92ad939a7f1898718e056797e4aaca6509"
+    },
+    {
+      "path": "/images/articles/causas-efluvio-telogeno.png",
+      "bytes": 40458,
+      "sha256": "3058bab450ab1801caf5acf69661fef16b77c76dea195a5efcd800a50bfc4cca"
     },
     {
       "path": "/images/articles/causas-queda-cabelo-medicamentos.png",
@@ -872,6 +877,16 @@
       "sha256": "d8f2c3d659671847b051f228be50b523b19925ffcf4c88659ab29e3b7eef8675"
     },
     {
+      "path": "/images/articles/causas-queda-cabelo-pos-covid.png",
+      "bytes": 42054,
+      "sha256": "25866459c8298fe317c5b426acbf9d7ae8d61a2009e2deca6bb32ccb3d4fadf9"
+    },
+    {
+      "path": "/images/articles/tratamentos-intradermoterapia-capilar.png",
+      "bytes": 40462,
+      "sha256": "5acaec5bbeb4c64f96ad7fcda0b984d32be4b82d2923cd99db1cba1b81ee0cf6"
+    },
+    {
       "path": "/images/articles/tratamentos-tricopigmentacao.png",
       "bytes": 41623,
       "sha256": "69747089b6394c96ebfb8066c874928cd55f7c52d89f2dbaec90b79203d384f4"
@@ -882,19 +897,9 @@
       "sha256": "cbc67d54facf339319e5a2568f676d9206982783374027c3f8a21fc75329411c"
     },
     {
-      "path": "/images/articles/tratamentos-intradermoterapia-capilar.png",
-      "bytes": 40462,
-      "sha256": "5acaec5bbeb4c64f96ad7fcda0b984d32be4b82d2923cd99db1cba1b81ee0cf6"
-    },
-    {
       "path": "/images/articles/tratamentos-mesoterapia-capilar.png",
       "bytes": 40413,
       "sha256": "9e7e2d1897df08a8a4679831b52b8845d67fdc89b57482f9e904fedc47cc503f"
-    },
-    {
-      "path": "/images/articles/medicamentos-saw-palmetto.png",
-      "bytes": 42813,
-      "sha256": "5102ce88dbc693ada8821eb493e3edf7560d40dd25da6bf0aa9e62b04f519f0d"
     },
     {
       "path": "/images/articles/causas-alopecia-areata.png",
@@ -905,6 +910,11 @@
       "path": "/images/articles/causas-alopecia-de-tracao.png",
       "bytes": 42561,
       "sha256": "2b58094c5d8a7e1666ba739ddfec4bbd0e927ee5bf9b287a90d711c54a95e417"
+    },
+    {
+      "path": "/images/articles/medicamentos-saw-palmetto.png",
+      "bytes": 42813,
+      "sha256": "5102ce88dbc693ada8821eb493e3edf7560d40dd25da6bf0aa9e62b04f519f0d"
     },
     {
       "path": "/images/articles/medicamentos-biotina-cabelo.png",
@@ -927,6 +937,11 @@
       "sha256": "c1b654780ecad2bc2c7ae25718c26dd9d3e14b3f624f1f60f997852431b29970"
     },
     {
+      "path": "/images/articles/blog-escala-norwood.png",
+      "bytes": 41045,
+      "sha256": "15f78b74071c59823f20f5c7317d18b6c0774c22c84319a222d5da9b265783b0"
+    },
+    {
       "path": "/images/articles/medicamentos-alfaestradiol.png",
       "bytes": 40027,
       "sha256": "4aba12b4c5b643ba750e985f9e48faadc000077f61ab7bf14c2d157b02da4cb3"
@@ -935,11 +950,6 @@
       "path": "/images/articles/blog-mitos-queda-cabelo.png",
       "bytes": 43627,
       "sha256": "29cfb4f728a739d7509aba1dc21b42fe64707d77c63024447bb790368aebdbed"
-    },
-    {
-      "path": "/images/articles/blog-escala-norwood.png",
-      "bytes": 41045,
-      "sha256": "15f78b74071c59823f20f5c7317d18b6c0774c22c84319a222d5da9b265783b0"
     },
     {
       "path": "/images/articles/blog-rotina-capilar-masculina.png",
@@ -967,11 +977,6 @@
       "sha256": "408b78d93dda881acb56e0fd699b84362a4367306c3f2116d7645d75e661406d"
     },
     {
-      "path": "/images/articles/medicamentos-dutasterida.png",
-      "bytes": 43250,
-      "sha256": "9625fae70126f62501ab7d903ffe754c83a9f51a4a987456c7fa9dd8bb1da932"
-    },
-    {
       "path": "/images/articles/medicamentos-cetoconazol-shampoo.png",
       "bytes": 42398,
       "sha256": "83a40cdad1a01acd30d62292f86278e8faf71501989535842ec1f22284101bd8"
@@ -980,6 +985,11 @@
       "path": "/images/articles/medicamentos-espironolactona.png",
       "bytes": 41684,
       "sha256": "8446ace97616ba7fd1b746719f6383df1ad51db74a3450d013c427ca88be217c"
+    },
+    {
+      "path": "/images/articles/medicamentos-dutasterida.png",
+      "bytes": 43250,
+      "sha256": "9625fae70126f62501ab7d903ffe754c83a9f51a4a987456c7fa9dd8bb1da932"
     },
     {
       "path": "/images/articles/medicamentos-finasterida.png",
@@ -1002,14 +1012,14 @@
       "sha256": "c63b14005582d179fe8e5862bcb80431f34edccaf5d0a969cdf5785a2b87f8ce"
     },
     {
-      "path": "/images/articles/tratamentos-transplante-capilar.png",
-      "bytes": 46722,
-      "sha256": "be6da30308ea3a530606f26ee4ac4329f613b74e46fb6b878b996dd80839ef35"
-    },
-    {
       "path": "/images/articles/medicamentos-minoxidil.png",
       "bytes": 40309,
       "sha256": "3646fefc1ba30ea172c0d3e575265b0d67f3c6d6e9db3835ab47640fae431f5f"
+    },
+    {
+      "path": "/images/articles/tratamentos-transplante-capilar.png",
+      "bytes": 46722,
+      "sha256": "be6da30308ea3a530606f26ee4ac4329f613b74e46fb6b878b996dd80839ef35"
     }
   ],
   "redirects": [

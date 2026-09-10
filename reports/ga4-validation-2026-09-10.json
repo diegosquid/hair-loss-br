@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-10",
+  "timezone": "America/Sao_Paulo",
+  "propertyId": "553499292",
+  "streamId": "15750113744",
+  "measurementId": "G-5HGNQ66T34",
+  "origin": "https://www.capilarmente.com.br",
+  "method": "Public Chrome journey with synthetic inputs; GA4 Realtime and custom definitions inspected through authenticated UI",
+  "consentTagCounts": { "beforeConsent": 0, "afterAccept": 1, "afterRefuse": 0 },
+  "observedRealtimeEventCounts": {
+    "page_view": 3,
+    "quiz_start": 1,
+    "quiz_step": 5,
+    "quiz_complete": 1,
+    "calculator_use": 1
+  },
+  "quizCompleteObservedAsKeyEvent": true,
+  "customEventDimensions": [
+    { "name": "Etapa do roteiro", "parameter": "step" },
+    { "name": "Oferta clicada", "parameter": "product" }
+  ],
+  "calculatorVisibleResults": {
+    "monthlyInputBRL": 80,
+    "consultationsPerYear": 2,
+    "consultationInputBRL": 300,
+    "oneTimeInputBRL": 200,
+    "firstYearBRL": 1760,
+    "monthlyEquivalentBRL": 146.67,
+    "recurringYearBRL": 1560
+  },
+  "limitations": [
+    "Counts belong to a synthetic verification session and do not represent acquisition results.",
+    "Event visibility propagated incrementally in Realtime.",
+    "No affiliate offers exist; affiliate_click was not simulated or verified.",
+    "Calculator amounts and questionnaire answers remain local and are excluded from the event payload."
+  ]
+}

@@ -1,6 +1,6 @@
 # Correções de SEO — Capilarmente
 
-Data: 9/9/2026. Branch: `codex/seo-recovery-2026-09-09`. Base: `7591f50`.
+Data inicial: 9/9/2026. Atualização e validação pública: 10/9/2026. Branch: `codex/seo-recovery-2026-09-09`. Base: `7591f50`.
 
 ## Resultado publicado e validado
 
@@ -23,13 +23,14 @@ Data: 9/9/2026. Branch: `codex/seo-recovery-2026-09-09`. Base: `7591f50`.
 - Search Console do domínio vinculado com sucesso ao novo fluxo em 9/9/2026.
 - Tag só carrega após aceitar métricas e somente no domínio público. Recusa, DNT/GPC e previews bloqueiam a medição. Eventos permitidos: `quiz_start`, `quiz_step`, `quiz_complete`, `calculator_use`, `affiliate_click`. Nenhuma resposta, sintoma ou valor digitado faz parte do payload.
 - URLs limitadas a páginas conhecidas, sem query/hash; origem de referência limitada ao domínio. Publicidade e Google Signals desativados no código. Cookies configurados para até 180 dias sem renovação a cada visita.
-- Teste público em 10/9: tag ausente antes do consentimento e presente após aceitar. Roteiro completo e calculadora executados. Conferência de recebimento no relatório GA4 em andamento; ainda não declaramos coleta confirmada.
+- Dimensões personalizadas de evento confirmadas no painel: “Etapa do roteiro” (`step`) e “Oferta clicada” (`product`).
+- Teste público em 10/9: zero tags antes do consentimento, uma após aceitar e zero após recusar novamente. Roteiro completo e calculadora executados com dados sintéticos. GA4 confirmou no relatório em tempo real: `page_view` 3, `quiz_start` 1, `quiz_step` 5, `quiz_complete` 1 e `calculator_use` 1. `quiz_complete` também apareceu como evento principal. Esses números são do teste, não resultados de aquisição. Evidência em `ga4-validation-2026-09-10.json`.
 
 ## Domínio e indexação
 
 - Domínio sem www com destino www e status permanente 308, conferido via HTTP público na raiz e em página interna. Seis redirecionamentos de autoria também passaram.
 - IndexNow: lote único de 95 URLs enviado em 10/9 após crawl público, chave/HTTP/canonical conferidos. HTTP 202: recebido para processamento/verificação de chave, não comprova indexação. Evidência em `indexnow/`.
-- Sitemap canônico público: 95 URLs. Search Console confirmou reenvio em 10/9, ainda exibindo a leitura anterior de 98 URLs. Bing já processou o sitemap HTTPS com www: Success, 95 URLs. Registro HTTP antigo permanece no histórico; seu endpoint redireciona para o sitemap canônico. Google confirmou solicitação de nova indexação da página de custos.
+- Sitemap canônico público: 95 URLs. Search Console confirmou reenvio em 10/9, ainda exibindo a leitura anterior de 98 URLs. Bing já processou o sitemap HTTPS com www: Success, 95 URLs. Registro HTTP antigo permanece no histórico; seu endpoint redireciona para o sitemap canônico. Google confirmou solicitações de nova indexação da página de custos e do novo guia de fibras. A confirmação da solicitação não significa que o novo guia já esteja indexado.
 - Linha de base da auditoria: Google 20 cliques / 2,69 mil impressões / CTR 0,7% / posição 11,1; Bing 266 cliques / 16,2 mil impressões / CTR 1,64% / posição 5,3, nas janelas registradas no relatório original.
 
 ## Testes de navegador
@@ -41,8 +42,8 @@ Chrome, build estático, desktop e viewport de 390 × 844. Página inicial e men
 1. O usuário autorizou `contato@capilarmente.com.br` como contato editorial. Endereço incluído; o encaminhamento no Cloudflare foi explicitamente deixado para depois. O recebimento de e-mail ainda não foi validado.
 2. O usuário pediu para deixar afiliados preparados e enviará os links posteriormente. O componente, aviso e medição estão prontos; `config/affiliate-offers.json` permanece vazio. Ainda não há receita de afiliados implementada.
 3. Revisão médica independente exige um profissional real, autorizado, e conferência documentada dos textos. Não foi simulada.
-4. Core Web Vitals de campo: dados insuficientes. Medição de laboratório pelo site PageSpeed Insights em 10/9: mobile 93 desempenho, 97 acessibilidade, 100 boas práticas, 100 SEO; LCP 2,9 s, FCP 0,9 s, TBT 150 ms, CLS 0. Ajustes de contraste e imagens responsivas aplicados após esse resultado. O trace específico da skill web-perf não foi executado porque não há Chrome DevTools MCP; a medição pública de laboratório está documentada separadamente em `HOME-2026-09-10.md`.
-5. Indexação e evolução de ranking dependem dos buscadores e devem ser comparadas à linha de base. Publicação, crawl público e envio de sitemaps concluídos; recebimento de eventos no painel GA4 ainda em conferência.
+4. Core Web Vitals de campo: dados insuficientes. Medição final de laboratório pelo site PageSpeed Insights em 10/9: mobile 89 desempenho, 100 acessibilidade, 100 boas práticas, 100 SEO; LCP 3,3 s, FCP 1,2 s, TBT 120 ms, CLS 0. Desempenho variou de 93 a 89 nas duas execuções; o LCP mobile ainda pode ser melhorado. O trace específico da skill web-perf não foi executado porque não há Chrome DevTools MCP; a medição pública de laboratório está documentada separadamente em `HOME-2026-09-10.md`.
+5. Indexação e evolução de ranking dependem dos buscadores e devem ser comparadas à linha de base. Publicação, crawl público, envio de sitemaps e recebimento dos eventos do roteiro e calculadora no painel GA4 concluídos. Cliques de afiliados só serão verificáveis quando houver ofertas reais autorizadas.
 
 ## Próxima leitura dos indicadores
 
@@ -54,4 +55,4 @@ O primeiro preview foi bloqueado pela Vercel por não associar o e-mail corporat
 
 ## Publicação em 10/9/2026
 
-Commits `af41dd7` (SEO/editorial/GA4) e `40c314a` (home) integrados via fast-forward ao main e publicados. Deployment `dpl_FEKgjRuNbwVunPVx6Ee6u57554EZ` Ready, associado a www/apex. Crawl público: 95 páginas, 87 imagens com SHA-256 igual ao build, 8 redirecionamentos, zero erros. Home com fotografia editorial, navegação por intenção e área de comparação. Evidências em `public-validation.json` e `HOME-2026-09-10.md`.
+Commits `af41dd7` (SEO/editorial/GA4), `40c314a` (home) e `38a2b48` (contraste e imagens responsivas) integrados via fast-forward ao main e publicados. Deployment final da aplicação `dpl_9Eyeu3kGXBN5QYGQWEFbw3f2EPoU` Ready, associado a www/apex. Crawl público: 95 páginas, 89 imagens com SHA-256 igual ao build, 8 redirecionamentos, zero erros. Home com fotografia editorial, navegação por intenção e área de comparação. Evidências em `public-validation.json` e `HOME-2026-09-10.md`.
